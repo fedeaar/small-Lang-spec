@@ -1,0 +1,78 @@
+{
+    "scopeName":"source.slspec",
+    "patterns": [{ "include": "#expression" }],
+    "repository": {
+        "expression": {
+            "patterns": [
+                { "include": "#keywords.spec" },
+                { "include": "#keywords.smallLang" },
+                { "include": "#keywords.types" },
+                { "include": "#keywords.seq" },
+                { "include": "#keywords.io" },
+                { "include": "#keywords.logicalConn" },
+                { "include": "#keywords.parenthesis" },
+                { "include": "#comment" },
+                { "include": "#parenthesis"}
+            ]
+        },
+
+        "keywords.io": {
+            "match": "\\b(in|out|inout)\\b",
+            "name": "keywords.io"
+        },
+        "parenthesis": {
+            "begin": "\\(",
+            "end": "\\)",
+            "beginCaptures": {
+                "0": { "name": "punctuation.parenthesis.open" }
+            },
+            "endCaptures": {
+                "0": { "name": "punctuation.parenthesis.close" }
+            },
+            "name": "punctuation.definition.parenthesis",
+            "patterns":[
+                {"include": "#patterns"}
+            ]
+        },
+        "keywords.spec": {
+            "match": "\\b(proc|aux|pred|pre|post|enum|type|wp)\\b",
+            "name": "keywords.spec"
+        },
+        "keywords.smallLang": {
+            "match":"\\b(from|to|if|then|else|fi|while|do|endwhile|skip|true|false)\\b|\\:\\=|∑|∏",
+            "name":"keywords.smallLang"
+        },
+        "keywords.types": {
+            "match":"\\b(ℤ|ℝ|Char|Bool|T)\\b",
+            "name":"keywords.types"
+        },
+        "keywords.seq": {
+            "begin": "\\bseq\\[",
+            "end":"\\]",
+            "name":"keywords.types",
+            "patterns":[
+                { "include": "#keywords.types" },
+                { "include": "#keywords.seq" }
+            ]
+        },
+        "keywords.logicalConn": {
+            "match":"(∧L|∨L|∧|∨|⟹L|⟹|⟺|≡)",
+            "name":"keywords.logicalConn"
+        },
+        "keywords.parenthesis": {
+            "match":"(\\{|\\}|\\(|\\))",
+            "name":"keywords.parenthesis"
+        },
+        "comment": {
+            "begin": "\/\\*",
+            "end": "\\*\/",
+            "beginCaptures": {
+                "0": { "name": "punctuation.comment.open" }
+            },
+            "endCaptures": {
+                "0": { "name": "punctuation.comment.close" }
+            },
+            "name": "punctuation.definition.comment"
+        }
+    }
+}

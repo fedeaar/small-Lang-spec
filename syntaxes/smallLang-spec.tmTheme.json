@@ -1,0 +1,80 @@
+{
+	"name": "smallLang-spec-theme",
+	"type": "dark",
+	"tokenColors": [
+		{
+			"name": "Comment",
+			"scope": [
+				"comment",
+				"punctuation.definition.comment"
+			],
+			"settings": {
+				"fontStyle": "italic",
+				"foreground": "#546E7A"
+			}
+		},
+		{
+			"name": "keywords.spec",
+			"scope": [
+				"keywords.spec"
+			],
+			"settings": {
+				"fontStyle": "italic",
+				"foreground": "#d73d6c"
+			}
+		},
+		{
+			"name": "keywords.smallLang",
+			"scope": [
+				"keywords.smallLang"
+			],
+			"settings": {
+				"fontStyle": "italic",
+				"foreground": "#65b2c6"
+			}
+		},
+		{
+			"name": "keywords.types",
+			"scope": [
+				"keywords.types"
+			],
+			"settings": {
+				"fontStyle": "italic",
+				"foreground": "#f4d75e"
+			}
+		},
+		{
+			"name": "keywords.io",
+			"scope": [
+				"io",
+				"keywords.io"
+			],
+			"settings": {
+				"fontStyle": "regular",
+				"foreground": "#65b2c6"
+			}
+		},
+		{
+			"name": "keywords.logicalConn",
+			"scope": [
+				"logicalConn",
+				"keywords.logicalConn"
+			],
+			"settings": {
+				"fontStyle": "regular",
+				"foreground": "#F6386D"
+			}
+		},
+		{
+			"name": "keywords.parenthesis",
+			"scope": [
+				"parenthesis",
+				"keywords.parenthesis"
+			],
+			"settings": {
+				"fontStyle": "bold",
+				"foreground": "#df7e8a"
+			}
+		}
+	]
+}
