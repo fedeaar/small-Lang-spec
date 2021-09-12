@@ -1,6 +1,6 @@
-8.d.
+/* sample SmallLang spec grammar */
 
-proc problema4 (in s: seq[ℤ], in i: ℤ, inout a: ℤ) {
+proc sumarUltimo(in s: seq[ℤ], in i: ℤ, inout a: ℤ) {
     pre  { P ≡  
         0 ≤ i < |s| ∧L 
         a = (∑ (if s[j] ≠ 0 then 1 else 0 fi) from j = 0 to i - 1)
@@ -17,7 +17,6 @@ S ≡ if (s[i] ≠ 0)
     else
         skip;
     fi;
-
 
 /* === demostración === */
 

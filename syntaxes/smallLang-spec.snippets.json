@@ -5,7 +5,7 @@
 			"proc (in , out ) {",
 				"\tpre {}",         
 				"\tpost {}",
-			"}\n"     
+			"};\n"     
 		]
 	},
 	"pred": {
@@ -13,7 +13,7 @@
 		"body": [
 			"pred () {",
 			"",
-			"}\n"
+			"};\n"
 		]
 	},
 	"aux": {
@@ -33,25 +33,25 @@
 		"body": [
 			"enum {",
 			"",
-			"}\n"
+			"};\n"
 		]
 	},
 	"if then else": {
 		"prefix": "if then else",
 		"body": [
-			"if a then", 
-			"\tb", 
+			"if then", 
+			"", 
 			"else", 
-			"\tc",
-			 "fi\n"
+			"",
+			 "fi;\n"
 		]
 	},
 	"while do endwhile": {
 		"prefix": "while do endwhile",
 		"body": [
-			"while b do", 
-			"\ta", 
-			"endwhile\n"
+			"while do", 
+			"", 
+			"endwhile;\n"
 		]
 	},
 	"skip": {
@@ -152,7 +152,7 @@
 		]
 	},
 	"equivalente -> ≡": {
-		"prefix": "equiv",
+		"prefix": "equivalente",
 		"body": [
 			"≡"
 		]
@@ -206,19 +206,19 @@
 		]
 	},
 	"bi-implicación -> ⟺": {
-		"prefix": "implica",
+		"prefix": "iff",
 		"body": [
 			"⟺"
 		]
 	},
 	"implicación izquierda -> ⟸": {
-		"prefix": "implica izq",
+		"prefix": "implicaL",
 		"body": [
 			"⟸"
 		]
 	},
 	"implicación derecha -> ⟹": {
-		"prefix": "implica der",
+		"prefix": "implicaR",
 		"body": [
 			"⟹"
 		]

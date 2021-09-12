@@ -1,69 +1,75 @@
 {
     "scopeName":"source.slspec",
-    "patterns": [{ "include": "#expression" }],
+    "patterns": [
+        { "include": "#expression" }
+    ],
     "repository": {
         "expression": {
             "patterns": [
-                { "include": "#keywords.spec" },
+                { "include": "#keywords.especificacion" },
+                { "include": "#keywords.especificacion.types" },
+                { "include": "#keywords.especificacion.types.seq" },
+                { "include": "#keywords.especificacion.io" },
                 { "include": "#keywords.smallLang" },
-                { "include": "#keywords.types" },
-                { "include": "#keywords.seq" },
-                { "include": "#keywords.io" },
-                { "include": "#keywords.logicalConn" },
-                { "include": "#keywords.parenthesis" },
-                { "include": "#comment" },
-                { "include": "#parenthesis"}
+                { "include": "#keywords.otros" },
+                { "include": "#types.boolean" },
+                { "include": "#types.number" },
+                { "include": "#types.char" },
+                { "include": "#logicalConnectors" },
+                { "include": "#parentesis" },
+                { "include": "#comentario" }
             ]
         },
-
-        "keywords.io": {
-            "match": "\\b(in|out|inout)\\b",
-            "name": "keywords.io"
-        },
-        "parenthesis": {
-            "begin": "\\(",
-            "end": "\\)",
-            "beginCaptures": {
-                "0": { "name": "punctuation.parenthesis.open" }
-            },
-            "endCaptures": {
-                "0": { "name": "punctuation.parenthesis.close" }
-            },
-            "name": "punctuation.definition.parenthesis",
-            "patterns":[
-                {"include": "#patterns"}
-            ]
-        },
-        "keywords.spec": {
+        "keywords.especificacion": {
             "match": "\\b(proc|aux|pred|pre|post|enum|type|wp)\\b",
-            "name": "keywords.spec"
+            "name": "keywords.especificacion"
         },
-        "keywords.smallLang": {
-            "match":"\\b(from|to|if|then|else|fi|while|do|endwhile|skip|true|false)\\b|\\:\\=|∑|∏",
-            "name":"keywords.smallLang"
-        },
-        "keywords.types": {
+        "keywords.especificacion.types": {
             "match":"\\b(ℤ|ℝ|Char|Bool|T)\\b",
-            "name":"keywords.types"
+            "name":"keywords.especificacion.types"
         },
-        "keywords.seq": {
+        "keywords.especificacion.types.seq": {
             "begin": "\\bseq\\[",
             "end":"\\]",
-            "name":"keywords.types",
+            "name":"keywords.especificacion.types",
             "patterns":[
-                { "include": "#keywords.types" },
-                { "include": "#keywords.seq" }
+                { "include": "#keywords.especificacion.types" },
+                { "include": "#keywords.especificacion.types.seq" }
             ]
         },
-        "keywords.logicalConn": {
+        "keywords.especificacion.io": {
+            "match": "\\b(in|out|inout)\\b",
+            "name": "keywords.especificacion.io"
+        },
+        "keywords.smallLang": {
+            "match":"\\b(if|then|else|fi|while|do|endwhile|skip)\\b|\\:\\=",
+            "name":"keywords.smallLang"
+        },
+        "keywords.otros": {
+            "match":"\\b(from|to)\\b|∑|∏",
+            "name":"keywords.otros"
+        },
+        "types.boolean": {
+            "match":"\\b(true|false|⊥)\\b",
+            "name":"types.boolean"
+        },
+        "types.number": {
+            "match":"\\d(\\.\\d)?",
+            "name":"types.number"
+        },
+        "types.char": {
+            "match":"\".??\"",
+            "name":"types.char"
+        },
+        "logicalConnectors": {
             "match":"(∧L|∨L|∧|∨|⟹L|⟹|⟺|≡)",
-            "name":"keywords.logicalConn"
+            "name":"logicalConnectors"
         },
-        "keywords.parenthesis": {
+        "parentesis": {
             "match":"(\\{|\\}|\\(|\\))",
-            "name":"keywords.parenthesis"
+            "name":"punctuation.parenthesis"
         },
-        "comment": {
+        "comentario": {
             "begin": "\/\\*",
             "end": "\\*\/",
             "beginCaptures": {

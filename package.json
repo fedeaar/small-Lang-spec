@@ -1,19 +1,36 @@
 {
-	"name": "smalllang-spec-grammar",
-	"displayName": "smallLang-spec-grammar",
-	"description": "a syntax and semantics tool for smallLang specifications according to David Gries' Science of Programming.",
+	"name": "smalllang-spec",
+	"displayName": "smallLang-Spec grammar",
+	"description": "syntax y semántica para SmallLang (como aparece en David Gries: Science of Programming - 1981) y la notación para especificación de Algoritmos y Estructuras de Datos I (UBA).",
 	"version": "0.0.1",
 	"engines": {
 		"vscode": "^1.60.0"
 	},
 	"categories": [
-		"Programming Languages"
+		"Language Packs"
 	],
 	"activationEvents": [
-		"onLanguage:smallLang-spec"
+		"onLanguage:smallLang-spec",
+		"onCommand:smallLang-spec.sample",
+		"onCommand:smallLang-spec.editTheme",
+		"onCommand:smallLang-spec.restoreTheme"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
+		"commands": [
+			{
+				"command": "smallLang-spec.sample",
+				"title": "SmallLang-Spec <sample file>"
+			},
+			{
+				"command": "smallLang-spec.editTheme",
+				"title": "SmallLang-Spec <edit theme>"
+			},
+			{
+				"command": "smallLang-spec.restoreTheme",
+				"title": "SmallLang-Spec <restore theme>"
+			}
+		],
 		"snippets": [
 			{
 				"language": "smallLang-spec",
@@ -26,7 +43,7 @@
 				"extensions": [
 					".slspec"
 				],
-				"configuration": "./syntaxes/language-configuration.json"
+				"configuration": "./syntaxes/smallLang-spec.config.json"
 			}
 		],
 		"grammars": [
@@ -38,7 +55,8 @@
 		],
 		"themes": [
             {
-                "label": "smallLang-spec-theme",
+                "label": "smallLang-spec",
+				"uiTheme": "vs-dark",
                 "path": "./syntaxes/smallLang-spec.tmTheme.json"
             }
         ]

@@ -1,70 +1,97 @@
-# smalllang-spec-grammar README
+# Small Lang Grammar README
 
-This is the README for your extension "smalllang-spec-grammar". After writing up a brief description, we recommend including the following sections.
+## Features ##
 
-## Features
+highlighting para SmallLang (como aparece en David Gries: Science of Programming - 1981) y la notación para especificación de Algoritmos y Estructuras de Datos I (UBA).
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+## Planes ##
+- crear un interprete de smallLang
+- crear un conversor .slspec a .tex
+- implementar un evaluador wp()
 
-For example if there is an image subfolder under your extension project workspace:
+## uso ##
+una vez instalado: 
+- crear un archivo .txt
+- cambiar su extensión a .slspec 
+- abrir en vscode
 
-\!\[feature X\]\(images/feature-x.png\)
+## comandos ##
+// en el command pallete de vscode (ctrl + shift + p) //
+- SmallLang-Spec < sample file >    -> abre una ejemplo de la aplicación
+- SmallLang-Spec < edit theme >     -> permite editar las configuraciones de estilo de la extensión.
+- SmallLang-Spec < restore theme >  -> rearma el estilo predeterminado.
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+## contacto ##
 
-## Requirements
+para sugerencias, bugfixes o contribuciones: fa.arienti@gmail.com
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+## Release Notes ##
 
-## Extension Settings
+## [0.0.1] - 2021-09-12 initial release 
+### added ###
+<grammar y highlighting>
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+- keywords.SmallLang                >   := , if , then , else , fi , while , do , endwhile , skip 
+- keywords.especificacion           >   proc ,  pre , post , pred , aux , enum, type, wp
+- keywords.especificacion.IO        >   in , out , inout
+- keywords.especificacion.types     >   ℤ , ℝ , Char , Bool , T , seq[<type>]
+- keywords.otros                    >   true , false , ∑ , ∏ , from , to
+- logicalConnectors                 >   ∧L , ∨L , ∧ , ∨ , ⟹L , ⟹ , ⟺ , ≡
+- comentarios                       >   /*  */
+- parentesis                        >   ( ) , { } , [ ]
+- type.char                         >   " "
+- type.boolen (sin highlighting)
+- type.number (sin highlighting)
+- folding por tabulación
 
-For example:
+<snippets : símbolos lógicos y matemáticos> 
 
-This extension contributes the following settings:
+- integer       >   ℤ
+- float         >   ℝ
+- forall        >   ∀
+- exists        >   ∃
+- nexists       >   ∄
+- not           >   ¬
+- product       >   ∏
+- sum           >   ∑
+- y             >   ∧
+- o             >   ∨
+- yluego        >   ∧L
+- oluego        >   ∨L
+- interseccion  >   ⋂
+- union         >   ⋃
+- neq           >   ≠
+- equivalente   >   ≡
+- leq           >   ≤ 
+- geq           >   ≥
+- subconjunto   >   ⊂
+- nsubconjunto  >   ⊄
+- pertenece     >   ∈
+- npertenece    >   ∉
+- iff           >   ⟺
+- implicaR      >   ⟹
+- implicaL      >   ⟸
+- cruz          >   ⨉
+- indefinido    >   ⊥
+- QED           >   ∎
+- subconjunto igual  >  ⊆ 
+- nsubconjunto igual >  ⊈
 
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
+<snippets : regExp>
 
-## Known Issues
+- proc
+- pred
+- aux
+- type
+- enum
+- if then else
+- while do endwhile
+- skip 
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+<comandos>
 
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
------------------------------------------------------------------------------------------------------------
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+- SmallLang-Spec < sample file >
+- SmallLang-Spec < edit theme >
+- SmallLang-Spec < restore theme >
+      
+    
