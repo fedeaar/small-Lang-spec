@@ -1,5 +1,5 @@
 import * as vscode from 'vscode';
-import {execLexer} from './lexer';
+import {execLexer} from './Lexer';
 
 export function activate(): void {
 	console.log('small Lang grammar is active.');
