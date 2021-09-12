@@ -89,7 +89,7 @@ para sugerencias, bugfixes o contribuciones: fa.arienti@gmail.com
 - SmallLang-Spec < edit theme >
 - SmallLang-Spec < restore theme >
       
-### Planes 
+## Planes 
 - crear un interprete de smallLang
 - crear un conversor .slspec a .tex
 - implementar un evaluador wp()
