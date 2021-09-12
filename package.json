@@ -2,6 +2,7 @@
 	"name": "smalllang-spec",
 	"displayName": "smallLang-Spec grammar",
 	"publisher": "fedeaar",
+	"repository":"https://github.com/fedeaar/small-Lang-spec",
 	"description": "syntax y semántica para SmallLang (como aparece en David Gries: Science of Programming - 1981) y la notación para especificación de Algoritmos y Estructuras de Datos I (UBA).",
 	"version": "0.0.1",
 	"engines": {
