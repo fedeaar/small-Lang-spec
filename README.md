@@ -2,6 +2,8 @@
 
 ## Features 
 
+\!\[header\]\(images/header.png\)
+
 highlighting para SmallLang (como aparece en David Gries: Science of Programming - 1981) y la notación para especificación de Algoritmos y Estructuras de Datos I (UBA).
 
 ## uso 
