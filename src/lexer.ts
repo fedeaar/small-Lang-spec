@@ -1,6 +1,6 @@
 import {SLError, SLinvalidCharError} from './errorHandlers';
 
-// === CONSTANTS === //
+// === CONSTANTS ===  //
 
 const lNUMBER    = '0123456789';
 const lALPHA     = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_';
@@ -183,7 +183,7 @@ class Lexer
 		
 	}
 	// === tipos de token === //
-    
+
 	private numberToken() : Token 
 	{
 		return this.genToken(
