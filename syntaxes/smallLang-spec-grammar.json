@@ -1,0 +1,111 @@
+{
+    "scopeName":"source.slspec",
+    "patterns": [
+        { "include": "#expression" }
+    ],
+    "repository": {
+        "expression": {
+            "patterns": [
+                { "include": "#keyword.control.slspec" },
+                { "include": "#keyword.function.slspec" },
+                { "include": "#keyword.function.inner.slspec" },
+                { "include": "#support.function.slspec" },
+                { "include": "#support.function.inner.slspec" },
+                { "include": "#variable.parameter.slspec" },
+                { "include": "#entity.name.type.slspec" },
+                { "include": "#entity.name.type.seq.slspec" },
+                { "include": "#constant.language.slspec" },
+                { "include": "#constant.numeric.slspec" },
+                { "include": "#constant.character.slspec" },
+                { "include": "#keyword.operator.logic.slspec" },
+                { "include": "#keyword.operator.math.slspec" },
+                { "include": "#punctuation.definition.slspec" },
+                { "include": "#comment.block.slspec" },
+                { "include": "#comment.line.slspec" }
+            ]
+        },
+        "keyword.control.slspec": {
+            "match": "\\b(proc|aux|pred|pre|post|enum|type|wp)\\b",
+            "name": "keyword.control.slspec"
+        },
+        "keyword.function.slspec": {
+            "match":"\\b(if|fi|while|endwhile|skip)\\b|\\:\\=",
+            "name":"keyword.function.slspec"
+        },
+        "keyword.function.inner.slspec": {
+            "match":"\\b(then|else|do)\\b",
+            "name":"keyword.function.inner.slspec"
+        },
+        "support.function.slspec": {
+            "match":"\\b(sum|prod)\\b|∑|∏",
+            "name":"support.function.slspec"
+        },
+        "support.function.inner.slspec": {
+            "match":"\\b(from|to)\\b",
+            "name":"support.function.inner.slspec"
+        },
+        "variable.parameter.slspec": {
+            "match": "\\b(in|out|inout)\\b",
+            "name": "variable.parameter.slspec"
+        },
+        "entity.name.type.slspec": {
+            "match":"\\b(ℤ|ℝ|Char|Bool|T)\\b|⨉",
+            "name":"entity.name.type.slspec"
+        },
+        "entity.name.type.seq.slspec": {
+            "begin": "\\bseq\\[",
+            "end":"\\]",
+            "name":"entity.name.type.slspec",
+            "patterns":[
+                { "include": "#entity.name.type.slspec"}, 
+                {"include":"#entity.name.type.sequence.slspec"}
+            ]
+        },
+        "constant.language.slspec": {
+            "match":"\\b(true|false|⊥)\\b",
+            "name":"constant.language.slspec"
+        },
+        "constant.numeric.slspec": {
+            "match":"\\d(\\.\\d)?",
+            "name":"constant.numeric.slspec"
+        },
+        "constant.character.slspec": {
+            "match":"(\"|').??(\"|')",
+            "name":"constant.character.slspec"
+        },
+        "keyword.operator.logic.slspec": {
+            "match":"(∧L|∨L|∧|∨|⟹L|⟹|⟺|≡|∀|∃|∄|¬|⋂|⋃|⊂|⊄|∈|∉|⊆|⊈|&&|\\|\\|)",
+            "name":"keyword.operator.logic.slspec"
+        },
+        "keyword.operator.math.slspec": {
+            "match":"(\\+|\\-|\\=|\\*|≠|≤|\\<|≥|\\>|∎|\\%|\\^)",
+            "name":"keyword.operator.math.slspec"
+        },
+        "punctuation.definition.slspec": {
+            "match":"(\\{|\\}|\\(|\\))",
+            "name":"punctuation.parenthesis.slspec"
+        },
+        "comment.block.slspec": {
+            "begin": "\/\\*",
+            "end": "\\*\/",
+            "beginCaptures": {
+                "0": { "name": "punctuation.comment.open" }
+            },
+            "endCaptures": {
+                "0": { "name": "punctuation.comment.close" }
+            },
+            "name": "comment.block.slspec"
+        },
+        "comment.line.slspec": {
+            "begin": "\/\/",
+            "end": "\n",
+            "beginCaptures": {
+                "0": { "name": "punctuation.comment.open" }
+            },
+            "endCaptures": {
+                "0": { "name": "punctuation.comment.close" }
+            },
+            "name": "comment.line.slspec"
+        }
+    }
+}

@@ -7,9 +7,8 @@ proc sumarUltimo(in s: seq[ℤ], in i: ℤ, inout a: ℤ) {
     }
     post { Q ≡ 
         a = (∑ (if s[j] ≠ 0 then 1 else 0 fi) from j = 0 to i)
-    }
-}
-
+    } 
+} 
 /* === algoritmo === */
 
 S ≡ if (s[i] ≠ 0) 
@@ -20,35 +19,35 @@ S ≡ if (s[i] ≠ 0)
 
 /* === demostración === */
 
-1. wp(S, Q) ≡ /* axioma condicional */ 
-    0 ≤ i < |s| ∧L (
+1. wp(S, Q) ≡ // axioma condicional
+    0 ≤ i < |s| ∧L ( 
         (s[i] ≠ 0 ∧ wp(a := a + 1, Q)) ∨ (s[i] = 0 ∧ wp(skip, Q))
     )
 
-2. wp(a := a + 1, Q) ≡ /* axioma asignación */
+2. wp(a := a + 1, Q) ≡ // axioma asignación 
     0 ≤ i < |s| ∧L (
         a + 1 = (∑ (if s[j] ≠ 0 then 1 else 0 fi) from j = 0 to i)
     )
 
-3. wp(skip, Q) ≡ /* axioma asignación */
+3. wp(skip, Q) ≡ // axioma asignación 
     0 ≤ i < |s| ∧L (
         a = (∑ (if s[j] ≠ 0 then 1 else 0 fi) from j = 0 to i)
     )
 
-4. {1.} ≡ /* ∧ -E */
+4. {1.} ≡ // ∧ -E
     0 ≤ i < |s| ∧L (
         (s[i] ≠ 0 ∧ a + 1 = (∑ (if s[j] ≠ 0 then 1 else 0 fi) from j = 0 to i)) ∨ 
         (s[i] = 0 ∧ a = (∑ (if s[j] ≠ 0 then 1 else 0 fi) from j = 0 to i))
     )
 
 5. P ⟹ {4.} 
-     ⟺ (s[i] ≠ 0 ∧  /* x ∧ y ⟹ x ∧ z, ∧ -E*/
+     ⟺ (s[i] ≠ 0 ∧  // x ∧ y ⟹ x ∧ z, ∧ -E
             (∑ (if s[j] ≠ 0 then 1 else 0 fi) from j = 0 to i - 1) + 1 = 
             (∑ (if s[j] ≠ 0 then 1 else 0 fi) from j = 0 to i)
         ) ∨
         (s[i] = 0 ∧
-            (∑ (if s[j] != 0 then 1 else 0 fi) from j = 0 to i - 1) = 
-            (∑ (if s[j] != 0 then 1 else 0 fi) from j = 0 to i)
+            (∑ (if s[j] ≠ 0 then 1 else 0 fi) from j = 0 to i - 1) = 
+            (∑ (if s[j] ≠ 0 then 1 else 0 fi) from j = 0 to i)
         )
     /* casos */
     5.1.    s[i] ≠ 0 ⟹ true ∨ false 

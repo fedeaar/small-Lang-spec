@@ -1,22 +1,24 @@
 # === Change Log === #
 
+## [0.0.2] - 2021-09-13 quick fixes
+### fixed ###
+- especificación de la gramática para evitar overlapping con el tema base.
+- normalización de los identificadores para que funcione con diversos temas.
+
 ## [0.0.1] - 2021-09-12 initial release 
-highlighting para SmallLang (como aparece en David Gries: Science of Programming - 1981) y la notación para especificación de Algoritmos y Estructuras de Datos I (UBA).
-
 ### added ###
-#### grammar y highlighting 
+#### gramática y configuraciones
 
-- keywords.SmallLang                =>   := , if , then , else , fi , while , do , endwhile , skip 
-- keywords.especificacion           =>   proc ,  pre , post , pred , aux , enum, type, wp
-- keywords.especificacion.IO        =>   in , out , inout
-- keywords.especificacion.types     =>   ℤ , ℝ , Char , Bool , T , seq[<type>]
-- keywords.otros                    =>   true , false , ∑ , ∏ , from , to
-- logicalConnectors                 =>   ∧L , ∨L , ∧ , ∨ , ⟹L , ⟹ , ⟺ , ≡
-- comentarios                       =>   /*  */
-- parentesis                        =>   ( ) , { } , [ ]
-- type.char                         =>   " "
-- type.boolen (sin highlighting)
-- type.number (sin highlighting)
+- funciones SmallLang ≡ := , if , then , else , fi , while , do , endwhile , skip 
+- funciones especificación ≡ proc ,  pre , post , pred , aux , enum, type, wp
+- funciones extendidas ≡ ∑ | sum , ∏ | prod , from , to
+- argumentos IO ≡  in , out , inout
+- tipos ≡ ℤ , ℝ , Char , Bool , T , seq[], T ⨉ T
+- constantes ≡ bool , char, numéricas
+- operadores lógicos
+- operadores matemáticos
+- comentarios ≡ /*  */ , //
+- parentesis ≡ ( ) , { } , [ ]
 - folding por tabulación
 
 #### snippets : símbolos lógicos y matemáticos
@@ -65,6 +67,11 @@ highlighting para SmallLang (como aparece en David Gries: Science of Programming
 
 #### comandos
 
-- SmallLang-Spec < sample file >
-- SmallLang-Spec < edit theme >
-- SmallLang-Spec < restore theme >
+- SmallLang-Spec: sample file 
+- SmallLang-Spec: edit theme 
+- SmallLang-Spec: restore theme 
+      
+## Planes 
+- crear un interprete de smallLang
+- crear un conversor .slspec a .tex
+- implementar un evaluador wp()

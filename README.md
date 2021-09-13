@@ -2,7 +2,8 @@
 
 ## Features 
 
-highlighting para SmallLang (como aparece en David Gries: Science of Programming - 1981) y la notación para especificación de Algoritmos y Estructuras de Datos I (UBA).
+- gramática para SmallLang (como aparece en David Gries: Science of Programming - 1981) y la notación para especificación de Algoritmos y Estructuras de Datos I (UBA).
+- un tema opcional que extiende a dark_plus de vscode para funcionar con smallLang (no lo altera)
 
 ## uso 
 una vez instalado: 
@@ -12,31 +13,40 @@ una vez instalado:
 
 ## comandos 
 // en el command pallete de vscode (ctrl + shift + p) //
-- SmallLang-Spec < sample file >    -> abre una ejemplo de la aplicación
-- SmallLang-Spec < edit theme >     -> permite editar las configuraciones de estilo de la extensión.
-- SmallLang-Spec < restore theme >  -> rearma el estilo predeterminado.
+- SmallLang-Spec: sample file -> abre una ejemplo de la aplicación
+- SmallLang-Spec: edit theme -> permite editar las configuraciones de estilo de la extensión.
+- SmallLang-Spec: restore theme  -> rearma el estilo predeterminado.
+
+
+## cambio de tema base
+- guardar en ./syntaxes/ el nuevo tema base (formato .json)
+- ejecutar smallLang-Spec: edit theme
+- cambiar 'dark_plus' por el nombre del nuevo tema en "include":"./dark_plus.json" 
 
 ## contacto 
-
 para sugerencias, bugfixes o contribuciones: fa.arienti@gmail.com
 
 ## Release Notes 
 
+## [0.0.2] - 2021-09-13 quick fixes
+### fixed ###
+- especificación de la gramática para evitar overlapping con el tema base.
+- normalización de los identificadores para que funcione con diversos temas.
+
 ## [0.0.1] - 2021-09-12 initial release 
 ### added ###
-#### grammar y highlighting 
+#### gramática y configuraciones
 
-- keywords.SmallLang                =>   := , if , then , else , fi , while , do , endwhile , skip 
-- keywords.especificacion           =>   proc ,  pre , post , pred , aux , enum, type, wp
-- keywords.especificacion.IO        =>   in , out , inout
-- keywords.especificacion.types     =>   ℤ , ℝ , Char , Bool , T , seq[<type>]
-- keywords.otros                    =>   true , false , ∑ , ∏ , from , to
-- logicalConnectors                 =>   ∧L , ∨L , ∧ , ∨ , ⟹L , ⟹ , ⟺ , ≡
-- comentarios                       =>   /*  */
-- parentesis                        =>   ( ) , { } , [ ]
-- type.char                         =>   " "
-- type.boolen (sin highlighting)
-- type.number (sin highlighting)
+- funciones SmallLang ≡ := , if , then , else , fi , while , do , endwhile , skip 
+- funciones especificación ≡ proc ,  pre , post , pred , aux , enum, type, wp
+- funciones extendidas ≡ ∑ | sum , ∏ | prod , from , to
+- argumentos IO ≡  in , out , inout
+- tipos ≡ ℤ , ℝ , Char , Bool , T , seq[], T ⨉ T
+- constantes ≡ bool , char, numéricas
+- operadores lógicos
+- operadores matemáticos
+- comentarios ≡ /*  */ , //
+- parentesis ≡ ( ) , { } , [ ]
 - folding por tabulación
 
 #### snippets : símbolos lógicos y matemáticos
@@ -85,9 +95,9 @@ para sugerencias, bugfixes o contribuciones: fa.arienti@gmail.com
 
 #### comandos
 
-- SmallLang-Spec < sample file >
-- SmallLang-Spec < edit theme >
-- SmallLang-Spec < restore theme >
+- SmallLang-Spec: sample file 
+- SmallLang-Spec: edit theme 
+- SmallLang-Spec: restore theme 
       
 ## Planes 
 - crear un interprete de smallLang
