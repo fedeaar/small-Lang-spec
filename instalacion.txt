@@ -1,0 +1,3 @@
+buscar en vscode marketplace: 'smallLang-Spec Grammar' e instalar.
+
+sino, seguir los pasos listados acá: https://code.visualstudio.com/api/working-with-extensions/publishing-extension#packaging-extensions.
