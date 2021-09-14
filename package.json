@@ -5,7 +5,7 @@
 	"repository":"https://github.com/fedeaar/small-Lang-spec",
 	"icon":"images/icon.PNG",
 	"description": "syntax y semántica para SmallLang (como aparece en David Gries: Science of Programming - 1981) y la notación para especificación de Algoritmos y Estructuras de Datos I (UBA).",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"engines": {
 		"vscode": "^1.60.0"
 	},
@@ -16,7 +16,10 @@
 		"onLanguage:smallLang-spec",
 		"onCommand:smallLang-spec.sample",
 		"onCommand:smallLang-spec.editTheme",
-		"onCommand:smallLang-spec.restoreTheme"
+		"onCommand:smallLang-spec.restoreTheme",
+		"onCommand:smallLang-spec.editSnippets",
+		"onCommand:smallLang-spec.commitSnippets",
+		"onCommand:smallLang-spec.restoreSnippets"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
@@ -32,6 +35,18 @@
 			{
 				"command": "smallLang-spec.restoreTheme",
 				"title": "SmallLang-Spec: restore theme"
+			},
+			{
+				"command": "smallLang-spec.editSnippets",
+				"title": "SmallLang-Spec: edit Snippets"
+			},
+			{
+				"command": "smallLang-spec.commitSnippets",
+				"title": "SmallLang-Spec: commit snippets"
+			},
+			{
+				"command": "smallLang-spec.restoreSnippets",
+				"title": "SmallLang-Spec: restore snippets"
 			}
 		],
 		"languages": [
@@ -40,27 +55,44 @@
 				"extensions": [
 					".slspec"
 				],
-				"configuration": "./syntaxes/smallLang-spec-config.json"
+				"configuration": "./syntaxes/config.json"
+			},
+			{
+				"id": "smallLang-config",
+				"extensions": [
+					".slconfig"
+				],
+				"configuration": "./syntaxes/config.json"
 			}
 		],
 		"grammars": [
 			{
 				"language": "smallLang-spec",
 				"scopeName": "source.slspec",
-				"path": "./syntaxes/smallLang-spec-grammar.json"
+				"path": "./syntaxes/grammar.json"
+			},
+			{
+				"language": "smallLang-config",
+				"scopeName": "source.slconfig",
+				"path": "./syntaxes/config-grammar.json"
 			}
 		],
 		"themes": [
             {
-                "label": "smallLang-spec",
+                "label": "smallLang Spec",
 				"uiTheme": "vs-dark",
-                "path": "./syntaxes/smallLang-spec-color-theme.json"
+                "path": "./syntaxes/color-theme.json"
+            },
+			{
+                "label": "smallLang Spec: Natanvek edit",
+				"uiTheme": "vs-dark",
+                "path": "./syntaxes/natanvek.color-theme.json"
             }
         ],
 		"snippets": [
 			{
 				"language": "smallLang-spec",
-				"path": "./syntaxes/smallLang-spec-snippets.json"
+				"path": "./syntaxes/snippets.json"
 			}
 		]
 	},

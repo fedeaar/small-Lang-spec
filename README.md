@@ -3,7 +3,10 @@
 ## Features 
 
 - gramática para SmallLang (como aparece en David Gries: Science of Programming - 1981) y la notación para especificación de Algoritmos y Estructuras de Datos I (UBA).
-- un tema opcional que extiende a dark_plus de vscode para funcionar con smallLang (no lo altera)
+- dos temas opcionales que extienden a dark_plus de vscode para funcionar mejor con smallLang (no lo altera).
+- compatibilidad con otros temas que sigan las convenciones de macromates.
+- snippets varios, entre ellos para los axiomas de corrección de programas, estructuración de proc, pred, aux, enum, type, if y while
+- un monton de reemplazos sintácticos (ver a través del commando > SmallLang-Spec: edit snippets)
 
 ## uso 
 una vez instalado: 
@@ -16,18 +19,39 @@ una vez instalado:
 - SmallLang-Spec: sample file -> abre una ejemplo de la aplicación
 - SmallLang-Spec: edit theme -> permite editar las configuraciones de estilo de la extensión.
 - SmallLang-Spec: restore theme  -> rearma el estilo predeterminado.
-
+- SmallLang-Spec: edit snippets -> permite editar através de un archivo slconfig los snippets de la extensión
+- SmallLang-Spec: commit snippets -> para aplicar los cambios. OJO! El commit actualiza el workspace, asique tengan todo guardado.
+- SmallLang-Spec: restore snippets -> rearma los snippets predeterminados.
 
 ## cambio de tema base
 - guardar en ./syntaxes/ el nuevo tema base (formato .json)
 - ejecutar smallLang-Spec: edit theme
 - cambiar 'dark_plus' por el nombre del nuevo tema en "include":"./dark_plus.json" 
 
-## contacto 
-para sugerencias, bugfixes o contribuciones: fa.arienti@gmail.com
+## contribuidores 
+Fede Arienti: fa.arienti@gmail.com
+Natan Vekselman: @natanvek 
 
 ## Release Notes 
+## [0.0.3] - 2021-09-13 quick fixes
+### added ###
+- for como palabra clave para las sumatorias
+- snippet yluego
+- snippets generales par sub y superscript
+- highlighting basico para funciones y sequencias
+- snippets para los axiomas generales (ax1 a ax5) por @Natanvek
+- un nuevo theme por @Natanvek
+- snippets para ⅀ ℿ ⟨ ⟩
+- un formato para crear y editar los snippets  a través de los comandos edit y commit snippets 
+- comandos nuevos: SmallLang-Spec : edit snippets, SmallLang-Spec: commit snippets (ojo tener todo guardado antes de usar, recargar el workspace), SmallLang-Spec: restore snippets
 
+### removed ###
+- case sensitivity para palabras claves
+
+### fixed ###
+- matching para nested seq
+- matching de numeros
+- bugs varios
 ## [0.0.2] - 2021-09-13 quick fixes
 ### fixed ###
 - especificación de la gramática para evitar overlapping con el tema base.

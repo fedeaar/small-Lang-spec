@@ -1,7 +1,7 @@
 {
 	"$schema": "vscode://schemas/color-theme",
 	"name": "Dark+ (default dark)",
-	"include": "./dark_vs.json",
+	"include": "./sc.dark_vs.json",
 	"tokenColors": [
 		{
 			"name": "Function declarations",

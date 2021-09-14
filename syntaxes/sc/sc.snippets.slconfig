@@ -1,0 +1,197 @@
+## importante: $$ al cominezo de una linea es un comando específico para la lectura del archivo. No modificar.
+## importante: guardar cualquier archivo abierto antes de ejecutar > SmallLang-Spec: commit snippets.
+## encoding : utf-8
+
+## sobre la sintáxis:
+##      comentarios: ##
+##      delimitador de entradas: ' ; ' 
+##      * indica las posibilidad de sub-entradas delimitadas por: ' , '
+##      ? indica que la entrada es opcional
+
+
+## snippets schema >>> nombre ; prefix* ; body* ; description?
+$$ snippets
+## --- conjuntos --- ##
+
+conjunto enteros - ℤ ; integer ; ℤ 
+conjunto reales  - ℝ ; float ; ℝ 
+
+union - ⋃ ; union ; ⋃  
+interseccion - ⋂ ; interseccion ; ⋂  
+
+subconjunto - ⊂ ; subconjunto ; ⊂ 
+subconjunto igual - ⊆ ; subconjunto igual ; ⊆ 
+no es subconjunto - ⊄ ; nsubconjunto ; ⊄ 
+no es subconjunto igual - ⊈ ; nsubconjunto igual ; ⊈
+
+pertenece - ∈ ; pertenece ; ∈
+no pertenece - ∉ ; npertenece ; ∉ 
+
+
+## --- cuantificadores --- ##
+
+para todos - ∀ ; forall ; ∀ 
+existe - ∃ ; exists ; ∃ 
+no existe - ∄ ; nexists ; ∄ 
+
+
+## --- lógica --- ##
+
+negacion - ¬ ; not ; ¬ 
+y - ∧  ; y ; ∧  
+y - ∧L ; yluego ; ∧L  
+o - ∨  ; o ; ∨ 
+o - ∨L ; oluego ; ∨L 
+
+implica - ⟹ ; implica ; ⟹ 
+implica luego - ⟹L ; implicaluego ; ⟹L
+implica izquierda - ⟸ ; implicaizq ; ⟸ 
+biimplicación - ⟺ ; iff, biimplicacion ; ⟺
+equivalente - ≡ ; equivalente ; ≡  
+
+indefinido - ⊥ ; indefinido ; ⊥ 
+
+
+## --- matemática --- ##
+
+sumatoria - ∑ ; sum ; ∑ 
+sumatoria - ⅀  ; sumbold ; ⅀  
+productoria - ∏ ; product ; ∏ 
+productoria - ℿ ; productbold ; ℿ
+desigual - ≠ ; neq ; ≠ 
+menor o igual - ≤ ; leq ; ≤  
+mayor o igual - ≥ ; geq ; ≥ 
+producto cruz - ⨉ ; cruz ; ⨉ 
+
+
+## --- super / subscript --- ##
+
+subscript 0 - ₀ ; sub0 , _0 ; ₀
+subscript 1 - ₁ ; sub1 , _1 ; ₁
+subscript 2 - ₂ ; sub2 , _2 ; ₂ 
+subscript 3 - ₃ ; sub3 , _3 ; ₃
+subscript 4 - ₄ ; sub4 , _4 ; ₄
+subscript 5 - ₅ ; sub5 , _5 ; ₅ 
+subscript 6 - ₆ ; sub6 , _6 ; ₆ 
+subscript 7 - ₇ ; sub7 , _7 ; ₇ 
+subscript 8 - ₈ ; sub8 , _8 ; ₈
+subscript 9 - ₉ ; sub9 , _9 ; ₉
+
+subscript a - ₐ ; suba , _a ; ₐ 				 					
+## subscript b -  ; subb , _b ; 
+## subscript c -  ; subc , _c ; 
+## subscript d -  ; subd , _d ; 
+subscript e - ₑ ; sube , _e ; ₑ
+## subscript f -  ; subf , _f ; 
+## subscript g -  ; subg , _g ; 
+subscript h - ₕ ; subh , _h ; ₕ  	
+subscript i - ᵢ ; subi , _i ; ᵢ 
+subscript j - ⱼ ; subj , _j ; ⱼ 
+subscript k - ₖ ; subk , _k ; ₖ 
+subscript l - ₗ ; subl , _l ; ₗ
+subscript m - ₘ ; subm , _m ; ₘ 	 
+subscript n - ₙ ; subn , _n ; ₙ
+subscript o - ₒ ; subo , _o ; ₒ
+subscript p - ₚ ; subp , _p ; ₚ
+## subscript q -  ; subq , _q ; 
+subscript r - ᵣ ; subr , _r ; ᵣ 
+subscript s - ₛ ; subs , _s ; ₛ 
+subscript t - ₜ ; subt , _t ; ₜ 
+subscript u - ᵤ ; subv , _v ; ᵤ 
+subscript v - ᵥ ; subu , _u ; ᵥ
+## subscript w -  ; subw , _w ; 
+subscript x - ₓ ; subx , _x ; ₓ 		
+## subscript y -  ; suby , _y ; 
+## subscript z -  ; subz , _z ; 
+
+superscript 0 - ⁰ ; sup0 , ^0 ; ⁰ 
+superscript 1 - ¹ ; sup1 , ^1 ; ¹  
+superscript 2 - ² ; sup2 , ^2 ; ² 
+superscript 3 - ³ ; sup3 , ^3 ; ³  
+superscript 4 - ⁴ ; sup4 , ^4 ; ⁴
+superscript 5 - ⁵ ; sup5 , ^5 ; ⁵
+superscript 6 - ⁶ ; sup6 , ^6 ; ⁶
+superscript 7 - ⁷ ; sup7 , ^7 ; ⁷
+superscript 8 - ⁸ ; sup8 , ^8 ; ⁸
+superscript 9 - ⁹ ; sup9 , ^9 ; ⁹
+
+superscript a - ᵃ ; supa , ^a ; ᵃ  	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 		 	 	 	
+superscript b - ᵇ ; supb , ^b ; ᵇ 
+superscript c - ᶜ ; supc , ^c ; ᶜ
+superscript d - ᵈ ; supd , ^d ; ᵈ
+superscript e - ᵉ ; supe , ^e ; ᵉ
+superscript f - ᶠ ; supf , ^f ; ᶠ
+superscript g - ᵍ ; supg , ^g ; ᵍ
+superscript h - ʰ ; suph , ^h ; ʰ 	 	 	
+superscript i - ⁱ ; supi , ^i ; ⁱ
+superscript j - ʲ ; supj , ^j ; ʲ
+superscript k - ᵏ ; supk , ^k ; ᵏ
+superscript l - ˡ ; supl , ^l ; ˡ
+superscript m - ᵐ ; supm , ^m ; ᵐ 	 	 	
+superscript n - ⁿ ; supn , ^n ; ⁿ
+superscript o - ᵒ ; supo , ^o ; ᵒ
+superscript p - ᵖ ; supp , ^p ; ᵖ
+## superscript q - ; supq , ^q ; 
+superscript r - ʳ ; supr , ^r ; ʳ 	 	 	 	 	 	
+superscript s - ˢ ; sups , ^s ; ˢ
+superscript t - ᵗ ; supt , ^t ; ᵗ
+superscript u - ᵘ ; supu , ^u ; ᵘ
+superscript v - ᵛ ; supv , ^v ; ᵛ
+superscript w - ʷ ; supw , ^w ; ʷ
+superscript x - ˣ ; supx , ^x ; ˣ 	 	
+superscript y - ʸ ; supy , ^y ; ʸ
+superscript z - ᶻ ; supz , ^z ; ᶻ
+
+superscript A - ᴬ ; supA , ^A ; ᴬ  	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 		 	 	 	
+superscript B - ᴮ ; supB , ^B ; ᴮ 
+## superscript C - 
+superscript D - ᴰ ; supD , ^D ; ᴰ
+superscript E - ᴱ ; supE , ^E ; ᴱ
+## superscript F - 
+superscript G - ᴳ ; supG , ^G ; ᴳ
+superscript H - ᴴ ; supH , ^H ; ᴴ
+superscript I - ᴵ ; supI , ^I ; ᴵ
+superscript J - ᴶ ; supJ , ^J ; ᴶ
+superscript K - ᴷ ; supK , ^K ; ᴷ
+superscript L - ᴸ ; supL , ^L ; ᴸ
+superscript M - ᴹ ; supM , ^M ; ᴹ
+superscript N - ᴺ ; supN , ^N ; ᴺ
+superscript O - ᴼ ; supO , ^O ; ᴼ
+superscript P - ᴾ ; supP , ^P ; ᴾ
+## superscript Q - ; supQ , ^Q ; 
+superscript R - ᴿ ; supR , ^R ; ᴿ
+## superscript S - ; supS , ^S ; 
+superscript T - ᵀ ; supT , ^T ; ᵀ
+superscript U - ᵁ ; supU , ^U ; ᵁ
+superscript V - ⱽ ; supV , ^V ; ⱽ
+superscript W - ᵂ ; supW , ^W ; ᵂ
+## superscript X - ; supX , ^X ; 
+## superscript Y - ; supY , ^Y ; 
+## superscript Z - ; supZ , ^Z ; 
+
+
+## --- otros --- ##
+
+Q.E.D - ■ ; QED ; ∎
+angle bracket - ⟨ ; anglel ; ⟨ 
+angle bracket - ⟩ ; angler ; ⟩
+
+
+## --- compleción sintáctica --- ###
+
+proc ; proc ; proc ${1:name}(${2:(in | out | inout) args* : type_id}) { , \tpre {${3:expr}} , \tpost {${4:expr}} , };\n 
+pred ; pred ; pred ${1:name}(${2:args* : type_id}) { , \t${3:expr} , };\n
+aux  ; aux ; aux ${1:name}(${2: args* : type_id}): ${3:return_type} = ${4:expr};\n
+type ; type ; type ${1:name} = ${2:declared_type};\n
+enum ; enum ; enum ${1:name}{ , \t${2:values} , };\n
+
+if then else ; if then else ; if ${1:cond} then , \t${2:expr} , else , \t${3:expr} , fi\n
+while do endwhile ; while do endwhile ; while ${1:cond} do , \t${2:expr} , endwhile\n
+skip ; skip ; skip\n
+
+Axioma 1: asignación ; ax1 , axioma 1 ; def(${1:var}) ∧L ${2:(Q, x:y)} ; axioma de asignación de variables
+Axioma 1: asignación s[i] ; ax1s , axioma 1 seq ; (((def(${1:seq}) ∧ def(${2:i})) ∧L 0 ≤ ${2:i} < |${1:seq}|)  ∧ def(${3:var})) ∧L ${4:(Q, x:y)} ; axioma de asignación de variables
+Axioma 2: skip ; ax2 , axioma 2 ; ${1:Q} ; axioma skip
+Axioma 3: secuencia ; ax3 , axioma 3 ; wp(${1:S1}, wp(${2:S2}, ${3:Q})) ; axioma encadenador de expresiones
+Axioma 4: condicional ; ax4 , axioma 4 ; def(${1:B}) ∧L ((${1:B} ∧ wp(${2:S1}, ${4:Q})) ∨ (¬${1:B} ∧ wp(${3:S2}, ${4:Q}))) ; axioma condicional
+Axioma 5: ciclos ; ax5 , axioma 5 ; 1. ${1:P} ⟹ ${2:I} , 2. {${2:I}} ∧ ${3:B}} ${4:S} {${2:I}} , 3. ${2:I} ∧ ¬${3:B} ⟹ ${5:Q} , 4. {${2:I} ∧ ${3:B} ∧ ${6:v₀} = ${7:fv}} ${4:S} {${7:fv} < ${6:v₀}} , 5. ${2:I} ∧ ${7:fv} ≤ 0 ⟹ ¬${3:B} , 6. {${1:P}} while ${3:B} do ${4:S} endwhile {${5:Q}} ; axioma ciclos

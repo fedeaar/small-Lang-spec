@@ -1,9 +1,9 @@
 {
-	"name": "smallLang-spec-theme",
+	"name": "smallLang-spec-theme-natanvek",
 	"type": "dark",
-	"include": "./dark_plus.json",
+	"include": "./sc/sc.dark_plus.json",
 	"colors": {
-		"editor.foreground": "#D4D4D4"
+		"editor.foreground": "#ced5d0"
 	},
 	"tokenColors": [
 		{
@@ -12,7 +12,7 @@
 				"keyword.control.slspec"
 			],
 			"settings":{
-				"foreground": "#F6386D",
+				"foreground": "#358cd6",
 				"fontStyle": "italic"
 			}
 		},
@@ -23,7 +23,7 @@
 			],
 			"settings":{
 				"fontStyle": "italic",
-				"foreground": "#569cd6"
+				"foreground": "#c586c0"
 			}
 		},
 		{
@@ -33,7 +33,7 @@
 			],
 			"settings":{
 				"fontStyle": "italic bold",
-				"foreground": "#569cd6"
+				"foreground": "#ffa13d"
 			}
 		},
 		{
@@ -63,18 +63,27 @@
 			],
 			"settings": {
 				"fontStyle": "",
-				"foreground": "#89ebb2"
+				"foreground": "#4ec9b0"
 			}
 		},
 		{
-			"name": "ℤ / ℝ / Char / Bool / T / ⨉ / seq[]",
+			"name": "ℤ / ℝ / Char / Bool / T / ⨉ / ",
 			"scope": [
 				"entity.name.type.slspec",
+			],
+			"settings": {
+				"fontStyle": "",
+				"foreground": "#ffa13d"
+			}
+		},
+		{
+			"name": "seq[]",
+			"scope": [
 				"entity.name.type.seq.slspec"
 			],
 			"settings": {
 				"fontStyle": "",
-				"foreground": "#4EC9B0"
+				"foreground": "#9cdcfe"
 			}
 		},
 		{
@@ -84,17 +93,17 @@
 			],
 			"settings": {
 				"fontStyle": "",
-				"foreground": "#2a9d8f"
+				"foreground": "#4ec9b0"
 			}
 		},
 		{
-			"name": "números",
+			"name": "nombre de funciones",
 			"scope": [
-				"constant.numeric.slspec"
+				"function.name.slspec"
 			],
 			"settings": {
 				"fontStyle": "",
-				"foreground": "#B5CEA8"
+				"foreground": "#dcdcaa"
 			}
 		},
 		{
@@ -114,7 +123,7 @@
 			],
 			"settings": {
 				"fontStyle": "",
-				"foreground": "#F6386D"
+				"foreground": "#ff6969"
 			}
 		},
 		{
@@ -124,7 +133,7 @@
 			],
 			"settings": {
 				"fontStyle": "",
-				"foreground": "#ec96af"
+				"foreground": "#4ec9b0"
 			}
 		},
 		{
@@ -155,6 +164,27 @@
 			"settings": {
 				"fontStyle": "italic",
 				"foreground": "#546E7A"
+			}
+		},
+		
+		{
+			"name": "scheme selector $$",
+			"scope": [
+				"keyword.control.slconfig"
+			],
+			"settings":{
+				"foreground": "#299e12",
+				"fontStyle": ""
+			}
+		},
+		{
+			"name": "delimitadores",
+			"scope": [
+				"keyword.operator.slconfig"
+			],
+			"settings": {
+				"fontStyle": "",
+				"foreground": "#2088b8"
 			}
 		}
 	]

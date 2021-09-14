@@ -9,16 +9,15 @@ proc sumarUltimo(in s: seq[ℤ], in i: ℤ, inout a: ℤ) {
         a = (∑ (if s[j] ≠ 0 then 1 else 0 fi) from j = 0 to i)
     } 
 } 
-/* === algoritmo === */
+/* === algoritmo === */  
 
 S ≡ if (s[i] ≠ 0) 
         a := a + 1;
-    else
+    else 
         skip;
-    fi;
-
+    fi; 
+    
 /* === demostración === */
-
 1. wp(S, Q) ≡ // axioma condicional
     0 ≤ i < |s| ∧L ( 
         (s[i] ≠ 0 ∧ wp(a := a + 1, Q)) ∨ (s[i] = 0 ∧ wp(skip, Q))

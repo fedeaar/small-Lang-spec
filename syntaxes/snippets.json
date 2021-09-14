@@ -1,0 +1,1277 @@
+{
+    "conjunto enteros - ℤ": {
+        "prefix": [
+            "enteros"
+        ],
+        "body": [
+            "ℤ"
+        ],
+        "description": ""
+    },
+    "conjunto reales  - ℝ": {
+        "prefix": [
+            "float"
+        ],
+        "body": [
+            "ℝ"
+        ],
+        "description": ""
+    },
+    "union - ⋃": {
+        "prefix": [
+            "union"
+        ],
+        "body": [
+            "⋃"
+        ],
+        "description": ""
+    },
+    "interseccion - ⋂": {
+        "prefix": [
+            "interseccion"
+        ],
+        "body": [
+            "⋂"
+        ],
+        "description": ""
+    },
+    "subconjunto - ⊂": {
+        "prefix": [
+            "subconjunto"
+        ],
+        "body": [
+            "⊂"
+        ],
+        "description": ""
+    },
+    "subconjunto igual - ⊆": {
+        "prefix": [
+            "subconjunto igual"
+        ],
+        "body": [
+            "⊆"
+        ],
+        "description": ""
+    },
+    "no es subconjunto - ⊄": {
+        "prefix": [
+            "nsubconjunto"
+        ],
+        "body": [
+            "⊄"
+        ],
+        "description": ""
+    },
+    "no es subconjunto igual - ⊈": {
+        "prefix": [
+            "nsubconjunto igual"
+        ],
+        "body": [
+            "⊈"
+        ],
+        "description": ""
+    },
+    "pertenece - ∈": {
+        "prefix": [
+            "pertenece"
+        ],
+        "body": [
+            "∈"
+        ],
+        "description": ""
+    },
+    "no pertenece - ∉": {
+        "prefix": [
+            "npertenece"
+        ],
+        "body": [
+            "∉"
+        ],
+        "description": ""
+    },
+    "para todos - ∀": {
+        "prefix": [
+            "forall"
+        ],
+        "body": [
+            "∀"
+        ],
+        "description": ""
+    },
+    "existe - ∃": {
+        "prefix": [
+            "exists"
+        ],
+        "body": [
+            "∃"
+        ],
+        "description": ""
+    },
+    "no existe - ∄": {
+        "prefix": [
+            "nexists"
+        ],
+        "body": [
+            "∄"
+        ],
+        "description": ""
+    },
+    "negacion - ¬": {
+        "prefix": [
+            "not"
+        ],
+        "body": [
+            "¬"
+        ],
+        "description": ""
+    },
+    "y - ∧": {
+        "prefix": [
+            "y"
+        ],
+        "body": [
+            "∧"
+        ],
+        "description": ""
+    },
+    "y - ∧L": {
+        "prefix": [
+            "yluego"
+        ],
+        "body": [
+            "∧L"
+        ],
+        "description": ""
+    },
+    "o - ∨": {
+        "prefix": [
+            "o"
+        ],
+        "body": [
+            "∨"
+        ],
+        "description": ""
+    },
+    "o - ∨L": {
+        "prefix": [
+            "oluego"
+        ],
+        "body": [
+            "∨L"
+        ],
+        "description": ""
+    },
+    "implica - ⟹": {
+        "prefix": [
+            "implica"
+        ],
+        "body": [
+            "⟹"
+        ],
+        "description": ""
+    },
+    "implica luego - ⟹L": {
+        "prefix": [
+            "implicaluego"
+        ],
+        "body": [
+            "⟹L"
+        ],
+        "description": ""
+    },
+    "implica izquierda - ⟸": {
+        "prefix": [
+            "implicaizq"
+        ],
+        "body": [
+            "⟸"
+        ],
+        "description": ""
+    },
+    "biimplicación - ⟺": {
+        "prefix": [
+            "iff, biimplicacion"
+        ],
+        "body": [
+            "⟺"
+        ],
+        "description": ""
+    },
+    "equivalente - ≡": {
+        "prefix": [
+            "equivalente"
+        ],
+        "body": [
+            "≡"
+        ],
+        "description": ""
+    },
+    "indefinido - ⊥": {
+        "prefix": [
+            "indefinido"
+        ],
+        "body": [
+            "⊥"
+        ],
+        "description": ""
+    },
+    "sumatoria - ∑": {
+        "prefix": [
+            "sum"
+        ],
+        "body": [
+            "∑"
+        ],
+        "description": ""
+    },
+    "sumatoria - ⅀": {
+        "prefix": [
+            "sumbold"
+        ],
+        "body": [
+            "⅀"
+        ],
+        "description": ""
+    },
+    "productoria - ∏": {
+        "prefix": [
+            "product"
+        ],
+        "body": [
+            "∏"
+        ],
+        "description": ""
+    },
+    "productoria - ℿ": {
+        "prefix": [
+            "productbold"
+        ],
+        "body": [
+            "ℿ"
+        ],
+        "description": ""
+    },
+    "desigual - ≠": {
+        "prefix": [
+            "neq"
+        ],
+        "body": [
+            "≠"
+        ],
+        "description": ""
+    },
+    "menor o igual - ≤": {
+        "prefix": [
+            "leq"
+        ],
+        "body": [
+            "≤"
+        ],
+        "description": ""
+    },
+    "mayor o igual - ≥": {
+        "prefix": [
+            "geq"
+        ],
+        "body": [
+            "≥"
+        ],
+        "description": ""
+    },
+    "producto cruz - ⨉": {
+        "prefix": [
+            "cruz"
+        ],
+        "body": [
+            "⨉"
+        ],
+        "description": ""
+    },
+    "subscript 0 - ₀": {
+        "prefix": [
+            "sub0",
+            "_0"
+        ],
+        "body": [
+            "₀"
+        ],
+        "description": ""
+    },
+    "subscript 1 - ₁": {
+        "prefix": [
+            "sub1",
+            "_1"
+        ],
+        "body": [
+            "₁"
+        ],
+        "description": ""
+    },
+    "subscript 2 - ₂": {
+        "prefix": [
+            "sub2",
+            "_2"
+        ],
+        "body": [
+            "₂"
+        ],
+        "description": ""
+    },
+    "subscript 3 - ₃": {
+        "prefix": [
+            "sub3",
+            "_3"
+        ],
+        "body": [
+            "₃"
+        ],
+        "description": ""
+    },
+    "subscript 4 - ₄": {
+        "prefix": [
+            "sub4",
+            "_4"
+        ],
+        "body": [
+            "₄"
+        ],
+        "description": ""
+    },
+    "subscript 5 - ₅": {
+        "prefix": [
+            "sub5",
+            "_5"
+        ],
+        "body": [
+            "₅"
+        ],
+        "description": ""
+    },
+    "subscript 6 - ₆": {
+        "prefix": [
+            "sub6",
+            "_6"
+        ],
+        "body": [
+            "₆"
+        ],
+        "description": ""
+    },
+    "subscript 7 - ₇": {
+        "prefix": [
+            "sub7",
+            "_7"
+        ],
+        "body": [
+            "₇"
+        ],
+        "description": ""
+    },
+    "subscript 8 - ₈": {
+        "prefix": [
+            "sub8",
+            "_8"
+        ],
+        "body": [
+            "₈"
+        ],
+        "description": ""
+    },
+    "subscript 9 - ₉": {
+        "prefix": [
+            "sub9",
+            "_9"
+        ],
+        "body": [
+            "₉"
+        ],
+        "description": ""
+    },
+    "subscript a - ₐ": {
+        "prefix": [
+            "suba",
+            "_a"
+        ],
+        "body": [
+            "ₐ"
+        ],
+        "description": ""
+    },
+    "subscript e - ₑ": {
+        "prefix": [
+            "sube",
+            "_e"
+        ],
+        "body": [
+            "ₑ"
+        ],
+        "description": ""
+    },
+    "subscript h - ₕ": {
+        "prefix": [
+            "subh",
+            "_h"
+        ],
+        "body": [
+            "ₕ"
+        ],
+        "description": ""
+    },
+    "subscript i - ᵢ": {
+        "prefix": [
+            "subi",
+            "_i"
+        ],
+        "body": [
+            "ᵢ"
+        ],
+        "description": ""
+    },
+    "subscript j - ⱼ": {
+        "prefix": [
+            "subj",
+            "_j"
+        ],
+        "body": [
+            "ⱼ"
+        ],
+        "description": ""
+    },
+    "subscript k - ₖ": {
+        "prefix": [
+            "subk",
+            "_k"
+        ],
+        "body": [
+            "ₖ"
+        ],
+        "description": ""
+    },
+    "subscript l - ₗ": {
+        "prefix": [
+            "subl",
+            "_l"
+        ],
+        "body": [
+            "ₗ"
+        ],
+        "description": ""
+    },
+    "subscript m - ₘ": {
+        "prefix": [
+            "subm",
+            "_m"
+        ],
+        "body": [
+            "ₘ"
+        ],
+        "description": ""
+    },
+    "subscript n - ₙ": {
+        "prefix": [
+            "subn",
+            "_n"
+        ],
+        "body": [
+            "ₙ"
+        ],
+        "description": ""
+    },
+    "subscript o - ₒ": {
+        "prefix": [
+            "subo",
+            "_o"
+        ],
+        "body": [
+            "ₒ"
+        ],
+        "description": ""
+    },
+    "subscript p - ₚ": {
+        "prefix": [
+            "subp",
+            "_p"
+        ],
+        "body": [
+            "ₚ"
+        ],
+        "description": ""
+    },
+    "subscript r - ᵣ": {
+        "prefix": [
+            "subr",
+            "_r"
+        ],
+        "body": [
+            "ᵣ"
+        ],
+        "description": ""
+    },
+    "subscript s - ₛ": {
+        "prefix": [
+            "subs",
+            "_s"
+        ],
+        "body": [
+            "ₛ"
+        ],
+        "description": ""
+    },
+    "subscript t - ₜ": {
+        "prefix": [
+            "subt",
+            "_t"
+        ],
+        "body": [
+            "ₜ"
+        ],
+        "description": ""
+    },
+    "subscript u - ᵤ": {
+        "prefix": [
+            "subv",
+            "_v"
+        ],
+        "body": [
+            "ᵤ"
+        ],
+        "description": ""
+    },
+    "subscript v - ᵥ": {
+        "prefix": [
+            "subu",
+            "_u"
+        ],
+        "body": [
+            "ᵥ"
+        ],
+        "description": ""
+    },
+    "subscript x - ₓ": {
+        "prefix": [
+            "subx",
+            "_x"
+        ],
+        "body": [
+            "ₓ"
+        ],
+        "description": ""
+    },
+    "superscript 0 - ⁰": {
+        "prefix": [
+            "sup0",
+            "^0"
+        ],
+        "body": [
+            "⁰"
+        ],
+        "description": ""
+    },
+    "superscript 1 - ¹": {
+        "prefix": [
+            "sup1",
+            "^1"
+        ],
+        "body": [
+            "¹"
+        ],
+        "description": ""
+    },
+    "superscript 2 - ²": {
+        "prefix": [
+            "sup2",
+            "^2"
+        ],
+        "body": [
+            "²"
+        ],
+        "description": ""
+    },
+    "superscript 3 - ³": {
+        "prefix": [
+            "sup3",
+            "^3"
+        ],
+        "body": [
+            "³"
+        ],
+        "description": ""
+    },
+    "superscript 4 - ⁴": {
+        "prefix": [
+            "sup4",
+            "^4"
+        ],
+        "body": [
+            "⁴"
+        ],
+        "description": ""
+    },
+    "superscript 5 - ⁵": {
+        "prefix": [
+            "sup5",
+            "^5"
+        ],
+        "body": [
+            "⁵"
+        ],
+        "description": ""
+    },
+    "superscript 6 - ⁶": {
+        "prefix": [
+            "sup6",
+            "^6"
+        ],
+        "body": [
+            "⁶"
+        ],
+        "description": ""
+    },
+    "superscript 7 - ⁷": {
+        "prefix": [
+            "sup7",
+            "^7"
+        ],
+        "body": [
+            "⁷"
+        ],
+        "description": ""
+    },
+    "superscript 8 - ⁸": {
+        "prefix": [
+            "sup8",
+            "^8"
+        ],
+        "body": [
+            "⁸"
+        ],
+        "description": ""
+    },
+    "superscript 9 - ⁹": {
+        "prefix": [
+            "sup9",
+            "^9"
+        ],
+        "body": [
+            "⁹"
+        ],
+        "description": ""
+    },
+    "superscript a - ᵃ": {
+        "prefix": [
+            "supa",
+            "^a"
+        ],
+        "body": [
+            "ᵃ"
+        ],
+        "description": ""
+    },
+    "superscript b - ᵇ": {
+        "prefix": [
+            "supb",
+            "^b"
+        ],
+        "body": [
+            "ᵇ"
+        ],
+        "description": ""
+    },
+    "superscript c - ᶜ": {
+        "prefix": [
+            "supc",
+            "^c"
+        ],
+        "body": [
+            "ᶜ"
+        ],
+        "description": ""
+    },
+    "superscript d - ᵈ": {
+        "prefix": [
+            "supd",
+            "^d"
+        ],
+        "body": [
+            "ᵈ"
+        ],
+        "description": ""
+    },
+    "superscript e - ᵉ": {
+        "prefix": [
+            "supe",
+            "^e"
+        ],
+        "body": [
+            "ᵉ"
+        ],
+        "description": ""
+    },
+    "superscript f - ᶠ": {
+        "prefix": [
+            "supf",
+            "^f"
+        ],
+        "body": [
+            "ᶠ"
+        ],
+        "description": ""
+    },
+    "superscript g - ᵍ": {
+        "prefix": [
+            "supg",
+            "^g"
+        ],
+        "body": [
+            "ᵍ"
+        ],
+        "description": ""
+    },
+    "superscript h - ʰ": {
+        "prefix": [
+            "suph",
+            "^h"
+        ],
+        "body": [
+            "ʰ"
+        ],
+        "description": ""
+    },
+    "superscript i - ⁱ": {
+        "prefix": [
+            "supi",
+            "^i"
+        ],
+        "body": [
+            "ⁱ"
+        ],
+        "description": ""
+    },
+    "superscript j - ʲ": {
+        "prefix": [
+            "supj",
+            "^j"
+        ],
+        "body": [
+            "ʲ"
+        ],
+        "description": ""
+    },
+    "superscript k - ᵏ": {
+        "prefix": [
+            "supk",
+            "^k"
+        ],
+        "body": [
+            "ᵏ"
+        ],
+        "description": ""
+    },
+    "superscript l - ˡ": {
+        "prefix": [
+            "supl",
+            "^l"
+        ],
+        "body": [
+            "ˡ"
+        ],
+        "description": ""
+    },
+    "superscript m - ᵐ": {
+        "prefix": [
+            "supm",
+            "^m"
+        ],
+        "body": [
+            "ᵐ"
+        ],
+        "description": ""
+    },
+    "superscript n - ⁿ": {
+        "prefix": [
+            "supn",
+            "^n"
+        ],
+        "body": [
+            "ⁿ"
+        ],
+        "description": ""
+    },
+    "superscript o - ᵒ": {
+        "prefix": [
+            "supo",
+            "^o"
+        ],
+        "body": [
+            "ᵒ"
+        ],
+        "description": ""
+    },
+    "superscript p - ᵖ": {
+        "prefix": [
+            "supp",
+            "^p"
+        ],
+        "body": [
+            "ᵖ"
+        ],
+        "description": ""
+    },
+    "superscript r - ʳ": {
+        "prefix": [
+            "supr",
+            "^r"
+        ],
+        "body": [
+            "ʳ"
+        ],
+        "description": ""
+    },
+    "superscript s - ˢ": {
+        "prefix": [
+            "sups",
+            "^s"
+        ],
+        "body": [
+            "ˢ"
+        ],
+        "description": ""
+    },
+    "superscript t - ᵗ": {
+        "prefix": [
+            "supt",
+            "^t"
+        ],
+        "body": [
+            "ᵗ"
+        ],
+        "description": ""
+    },
+    "superscript u - ᵘ": {
+        "prefix": [
+            "supu",
+            "^u"
+        ],
+        "body": [
+            "ᵘ"
+        ],
+        "description": ""
+    },
+    "superscript v - ᵛ": {
+        "prefix": [
+            "supv",
+            "^v"
+        ],
+        "body": [
+            "ᵛ"
+        ],
+        "description": ""
+    },
+    "superscript w - ʷ": {
+        "prefix": [
+            "supw",
+            "^w"
+        ],
+        "body": [
+            "ʷ"
+        ],
+        "description": ""
+    },
+    "superscript x - ˣ": {
+        "prefix": [
+            "supx",
+            "^x"
+        ],
+        "body": [
+            "ˣ"
+        ],
+        "description": ""
+    },
+    "superscript y - ʸ": {
+        "prefix": [
+            "supy",
+            "^y"
+        ],
+        "body": [
+            "ʸ"
+        ],
+        "description": ""
+    },
+    "superscript z - ᶻ": {
+        "prefix": [
+            "supz",
+            "^z"
+        ],
+        "body": [
+            "ᶻ"
+        ],
+        "description": ""
+    },
+    "superscript A - ᴬ": {
+        "prefix": [
+            "supA",
+            "^A"
+        ],
+        "body": [
+            "ᴬ"
+        ],
+        "description": ""
+    },
+    "superscript B - ᴮ": {
+        "prefix": [
+            "supB",
+            "^B"
+        ],
+        "body": [
+            "ᴮ"
+        ],
+        "description": ""
+    },
+    "superscript D - ᴰ": {
+        "prefix": [
+            "supD",
+            "^D"
+        ],
+        "body": [
+            "ᴰ"
+        ],
+        "description": ""
+    },
+    "superscript E - ᴱ": {
+        "prefix": [
+            "supE",
+            "^E"
+        ],
+        "body": [
+            "ᴱ"
+        ],
+        "description": ""
+    },
+    "superscript G - ᴳ": {
+        "prefix": [
+            "supG",
+            "^G"
+        ],
+        "body": [
+            "ᴳ"
+        ],
+        "description": ""
+    },
+    "superscript H - ᴴ": {
+        "prefix": [
+            "supH",
+            "^H"
+        ],
+        "body": [
+            "ᴴ"
+        ],
+        "description": ""
+    },
+    "superscript I - ᴵ": {
+        "prefix": [
+            "supI",
+            "^I"
+        ],
+        "body": [
+            "ᴵ"
+        ],
+        "description": ""
+    },
+    "superscript J - ᴶ": {
+        "prefix": [
+            "supJ",
+            "^J"
+        ],
+        "body": [
+            "ᴶ"
+        ],
+        "description": ""
+    },
+    "superscript K - ᴷ": {
+        "prefix": [
+            "supK",
+            "^K"
+        ],
+        "body": [
+            "ᴷ"
+        ],
+        "description": ""
+    },
+    "superscript L - ᴸ": {
+        "prefix": [
+            "supL",
+            "^L"
+        ],
+        "body": [
+            "ᴸ"
+        ],
+        "description": ""
+    },
+    "superscript M - ᴹ": {
+        "prefix": [
+            "supM",
+            "^M"
+        ],
+        "body": [
+            "ᴹ"
+        ],
+        "description": ""
+    },
+    "superscript N - ᴺ": {
+        "prefix": [
+            "supN",
+            "^N"
+        ],
+        "body": [
+            "ᴺ"
+        ],
+        "description": ""
+    },
+    "superscript O - ᴼ": {
+        "prefix": [
+            "supO",
+            "^O"
+        ],
+        "body": [
+            "ᴼ"
+        ],
+        "description": ""
+    },
+    "superscript P - ᴾ": {
+        "prefix": [
+            "supP",
+            "^P"
+        ],
+        "body": [
+            "ᴾ"
+        ],
+        "description": ""
+    },
+    "superscript R - ᴿ": {
+        "prefix": [
+            "supR",
+            "^R"
+        ],
+        "body": [
+            "ᴿ"
+        ],
+        "description": ""
+    },
+    "superscript T - ᵀ": {
+        "prefix": [
+            "supT",
+            "^T"
+        ],
+        "body": [
+            "ᵀ"
+        ],
+        "description": ""
+    },
+    "superscript U - ᵁ": {
+        "prefix": [
+            "supU",
+            "^U"
+        ],
+        "body": [
+            "ᵁ"
+        ],
+        "description": ""
+    },
+    "superscript V - ⱽ": {
+        "prefix": [
+            "supV",
+            "^V"
+        ],
+        "body": [
+            "ⱽ"
+        ],
+        "description": ""
+    },
+    "superscript W - ᵂ": {
+        "prefix": [
+            "supW",
+            "^W"
+        ],
+        "body": [
+            "ᵂ"
+        ],
+        "description": ""
+    },
+    "Q.E.D - ■": {
+        "prefix": [
+            "QED"
+        ],
+        "body": [
+            "∎"
+        ],
+        "description": ""
+    },
+    "angle bracket - ⟨": {
+        "prefix": [
+            "anglel"
+        ],
+        "body": [
+            "⟨"
+        ],
+        "description": ""
+    },
+    "angle bracket - ⟩": {
+        "prefix": [
+            "angler"
+        ],
+        "body": [
+            "⟩"
+        ],
+        "description": ""
+    },
+    "proc": {
+        "prefix": [
+            "proc"
+        ],
+        "body": [
+            "proc ${1:name}(${2:(in | out | inout) args* : type_id}) {",
+            "\tpre {${3:expr}}",
+            "\tpost {${4:expr}}",
+            "};\n"
+        ],
+        "description": ""
+    },
+    "pred": {
+        "prefix": [
+            "pred"
+        ],
+        "body": [
+            "pred ${1:name}(${2:args* : type_id}) {",
+            "\t${3:expr}",
+            "};\n"
+        ],
+        "description": ""
+    },
+    "aux": {
+        "prefix": [
+            "aux"
+        ],
+        "body": [
+            "aux ${1:name}(${2: args* : type_id}): ${3:return_type} = ${4:expr};\n"
+        ],
+        "description": ""
+    },
+    "type": {
+        "prefix": [
+            "type"
+        ],
+        "body": [
+            "type ${1:name} = ${2:declared_type};\n"
+        ],
+        "description": ""
+    },
+    "enum": {
+        "prefix": [
+            "enum"
+        ],
+        "body": [
+            "enum ${1:name}{",
+            "\t${2:values}",
+            "};\n"
+        ],
+        "description": ""
+    },
+    "if then else": {
+        "prefix": [
+            "if then else"
+        ],
+        "body": [
+            "if ${1:cond} then",
+            "\t${2:expr}",
+            "else",
+            "\t${3:expr}",
+            "fi\n"
+        ],
+        "description": ""
+    },
+    "while do endwhile": {
+        "prefix": [
+            "while do endwhile"
+        ],
+        "body": [
+            "while ${1:cond} do",
+            "\t${2:expr}",
+            "endwhile\n"
+        ],
+        "description": ""
+    },
+    "skip": {
+        "prefix": [
+            "skip"
+        ],
+        "body": [
+            "skip\n"
+        ],
+        "description": ""
+    },
+    "Axioma 1: asignación": {
+        "prefix": [
+            "ax1",
+            "axioma 1"
+        ],
+        "body": [
+            "def(${1:var}) ∧L ${2:(Q, x:y)}"
+        ],
+        "description": "axioma de asignación de variables"
+    },
+    "Axioma 1: asignación s[i]": {
+        "prefix": [
+            "ax1s",
+            "axioma 1 seq"
+        ],
+        "body": [
+            "(((def(${1:seq}) ∧ def(${2:i})) ∧L 0 ≤ ${2:i} < |${1:seq}|)  ∧ def(${3:var})) ∧L ${4:(Q, x:y)}"
+        ],
+        "description": "axioma de asignación de variables"
+    },
+    "Axioma 2: skip": {
+        "prefix": [
+            "ax2",
+            "axioma 2"
+        ],
+        "body": [
+            "${1:Q}"
+        ],
+        "description": "axioma skip"
+    },
+    "Axioma 3: secuencia": {
+        "prefix": [
+            "ax3",
+            "axioma 3"
+        ],
+        "body": [
+            "wp(${1:S1}, wp(${2:S2}, ${3:Q}))"
+        ],
+        "description": "axioma encadenador de expresiones"
+    },
+    "Axioma 4: condicional": {
+        "prefix": [
+            "ax4",
+            "axioma 4"
+        ],
+        "body": [
+            "def(${1:B}) ∧L ((${1:B} ∧ wp(${2:S1}, ${4:Q})) ∨ (¬${1:B} ∧ wp(${3:S2}, ${4:Q})))"
+        ],
+        "description": "axioma condicional"
+    },
+    "Axioma 5: ciclos": {
+        "prefix": [
+            "ax5",
+            "axioma 5"
+        ],
+        "body": [
+            "1. ${1:P} ⟹ ${2:I}",
+            "2. {${2:I}} ∧ ${3:B}} ${4:S} {${2:I}}",
+            "3. ${2:I} ∧ ¬${3:B} ⟹ ${5:Q}",
+            "4. {${2:I} ∧ ${3:B} ∧ ${6:v₀} = ${7:fv}} ${4:S} {${7:fv} < ${6:v₀}}",
+            "5. ${2:I} ∧ ${7:fv} ≤ 0 ⟹ ¬${3:B}",
+            "6. {${1:P}} while ${3:B} do ${4:S} endwhile {${5:Q}}"
+        ],
+        "description": "axioma ciclos"
+    }
+}

@@ -1,0 +1,36 @@
+{
+    "scopeName":"source.slconfig",
+    "patterns": [
+        { "include": "#expression" }
+    ],
+    "repository": {
+        "expression": {
+            "patterns": [
+                { "include": "#keyword.control.slconfig" },
+                { "include": "#keyword.operator.slconfig" },
+                { "include": "#storage.type.slconfig" },
+                { "include": "#comment.line.slconfig" }
+            ]
+        },
+        "keyword.control.slconfig":{
+            "begin": "^\\$\\$",
+            "end": "\n",
+            "name": "keyword.control.slconfig"
+        },
+        "keyword.operator.slconfig": {
+            "match":"\\s*(\\; | \\,)\\s*",
+            "name":"keyword.operator.slconfig"
+        },
+        "comment.line.slconfig": {
+            "begin": "^\\#\\#",
+            "end": "\n",
+            "beginCaptures": {
+                "0": { "name": "punctuation.comment.open" }
+            },
+            "endCaptures": {
+                "0": { "name": "punctuation.comment.close" }
+            },
+            "name": "comment.line.slconfig"
+        }
+    }
+}

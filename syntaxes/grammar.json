@@ -14,6 +14,11 @@
                 { "include": "#variable.parameter.slspec" },
                 { "include": "#entity.name.type.slspec" },
                 { "include": "#entity.name.type.seq.slspec" },
+                { "include": "#entity.name.type.seq.angle.slspec" },
+                { "include": "#entity.name.function.slspec" },
+                { "include": "#entity.name.function.type.slspec" },
+                { "include": "#entity.name.function.enum.slspec" },
+                { "include": "#variable.other.readwrite.slspec"},
                 { "include": "#constant.language.slspec" },
                 { "include": "#constant.numeric.slspec" },
                 { "include": "#constant.character.slspec" },
@@ -25,23 +30,23 @@
             ]
         },
         "keyword.control.slspec": {
-            "match": "\\b(proc|aux|pred|pre|post|enum|type|wp)\\b",
+            "match": "(?i)\\b(proc|aux|pred|pre|post|enum|type|wp|def)\\b",
             "name": "keyword.control.slspec"
         },
         "keyword.function.slspec": {
-            "match":"\\b(if|fi|while|endwhile|skip)\\b|\\:\\=",
+            "match":"(?i)\\b(if|fi|while|endwhile|skip)\\b|\\:\\=",
             "name":"keyword.function.slspec"
         },
         "keyword.function.inner.slspec": {
-            "match":"\\b(then|else|do)\\b",
+            "match":"(?i)\\b(then|else|do)\\b",
             "name":"keyword.function.inner.slspec"
         },
         "support.function.slspec": {
-            "match":"\\b(sum|prod)\\b|∑|∏",
+            "match":"(?i)\\b(sum|prod)\\b|∑|∏|⅀|ℿ",
             "name":"support.function.slspec"
         },
         "support.function.inner.slspec": {
-            "match":"\\b(from|to)\\b",
+            "match":"\\b(from|to|for)\\b",
             "name":"support.function.inner.slspec"
         },
         "variable.parameter.slspec": {
@@ -55,18 +60,43 @@
         "entity.name.type.seq.slspec": {
             "begin": "\\bseq\\[",
             "end":"\\]",
-            "name":"entity.name.type.slspec",
+            "name":"entity.name.type.seq.slspec",
             "patterns":[
                 { "include": "#entity.name.type.slspec"}, 
-                {"include":"#entity.name.type.sequence.slspec"}
+                {"include":"#entity.name.type.seq.slspec"}
             ]
         },
+        "entity.name.type.seq.angle.slspec": {
+            "begin": "\\bseq⟨",
+            "end":"\\⟩",
+            "name":"entity.name.type.seq.slspec",
+            "patterns":[
+                { "include": "#entity.name.type.slspec"}, 
+                {"include":"#entity.name.type.seq.slspec"}
+            ]
+        },
+        "entity.name.function.slspec": {
+            "match":"\\b[\\D&&\\w]\\w*\\b\\s*(?=\\()",
+            "name":"entity.name.function.slspec"
+        },
+        "entity.name.function.type.slspec": {
+            "match":"(?i)(?<=type)\\b[\\D&&\\w]\\w*\\b\\s*(?=\\=)",
+            "name":"entity.name.function.slspec"
+        },
+        "entity.name.function.enum.slspec": {
+            "match":"(?i)(?<=enum)\\b\\D\\w*\\b\\s*(?=\\{)",
+            "name":"entity.name.function.slspec"
+        },
+        "variable.other.readwrite.slspec": {
+            "match":"\\b[\\D&&\\w]\\w*(?=\\[)",
+            "name":"variable.other.readwrite.slspec"
+        },
         "constant.language.slspec": {
-            "match":"\\b(true|false|⊥)\\b",
+            "match":"\\b(true|false)\\b|⊥",
             "name":"constant.language.slspec"
         },
         "constant.numeric.slspec": {
-            "match":"\\d(\\.\\d)?",
+            "match":"(?<!\\d\\.)\\b\\d+(\\.\\d+)?\\b(?!\\.)",
             "name":"constant.numeric.slspec"
         },
         "constant.character.slspec": {
@@ -74,7 +104,7 @@
             "name":"constant.character.slspec"
         },
         "keyword.operator.logic.slspec": {
-            "match":"(∧L|∨L|∧|∨|⟹L|⟹|⟺|≡|∀|∃|∄|¬|⋂|⋃|⊂|⊄|∈|∉|⊆|⊈|&&|\\|\\|)",
+            "match":"(∧L|∨L|∧|∨|⟹L|⟸|⟹|⟺|≡|∀|∃|∄|¬|⋂|⋃|⊂|⊄|∈|∉|⊆|⊈|&&|\\|\\|)",
             "name":"keyword.operator.logic.slspec"
         },
         "keyword.operator.math.slspec": {
@@ -82,7 +112,7 @@
             "name":"keyword.operator.math.slspec"
         },
         "punctuation.definition.slspec": {
-            "match":"(\\{|\\}|\\(|\\))",
+            "match":"(\\{|\\}|\\(|\\)|\\]|\\[|⟨|⟩|\\|)",
             "name":"punctuation.parenthesis.slspec"
         },
         "comment.block.slspec": {
