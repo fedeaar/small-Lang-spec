@@ -37,13 +37,13 @@ una vez instalado:
 ### added ###
 - for como palabra clave para las sumatorias
 - snippet yluego
-- snippets generales par sub y superscript
-- highlighting basico para funciones y sequencias
+- snippets generales para sub y superscript
+- highlighting basico para funciones y secuencias
 - snippets para los axiomas generales (ax1 a ax5) por @Natanvek
 - un nuevo theme por @Natanvek
 - snippets para ⅀ ℿ ⟨ ⟩
 - un formato para crear y editar los snippets  a través de los comandos edit y commit snippets 
-- comandos nuevos: SmallLang-Spec : edit snippets, SmallLang-Spec: commit snippets (ojo tener todo guardado antes de usar, recargar el workspace), SmallLang-Spec: restore snippets
+- comandos nuevos: SmallLang-Spec : edit snippets, SmallLang-Spec: commit snippets (ojo tener todo guardado antes de usar, recarga el workspace), SmallLang-Spec: restore snippets
 
 ### removed ###
 - case sensitivity para palabras claves
