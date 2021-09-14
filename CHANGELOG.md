@@ -1,5 +1,5 @@
 # === Change Log === #
-## [0.0.3] - 2021-09-13 quick fixes
+## [0.0.3] - 2021-09-13 slconfig para edición de snippets
 ### added ###
 - for como palabra clave para las sumatorias
 - snippet yluego
