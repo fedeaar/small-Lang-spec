@@ -30,7 +30,7 @@ una vez instalado:
 
 ## contribuidores 
 - Fede Arienti: fa.arienti@gmail.com
-- Natan Vekselman: @natanvek 
+- Natán Vekselman: @natanvek 
 
 ## Release Notes 
 ## [0.0.3] - 2021-09-13 slconfig para edición de snippets
@@ -39,8 +39,8 @@ una vez instalado:
 - snippet yluego
 - snippets generales para sub y superscript
 - highlighting basico para funciones y secuencias
-- snippets para los axiomas generales (ax1 a ax5) por @Natanvek
-- un nuevo theme por @Natanvek
+- snippets para los axiomas generales (ax1 a ax5) por @NatanVek
+- un nuevo theme por @NatanVek
 - snippets para ⅀ ℿ ⟨ ⟩
 - un formato para crear y editar los snippets  a través de los comandos edit y commit snippets 
 - comandos nuevos: SmallLang-Spec : edit snippets, SmallLang-Spec: commit snippets (ojo tener todo guardado antes de usar, recarga el workspace), SmallLang-Spec: restore snippets
