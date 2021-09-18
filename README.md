@@ -29,8 +29,9 @@ una vez instalado:
 - cambiar 'dark_plus' por el nombre del nuevo tema en "include":"./dark_plus.json" 
 
 ## contribuidores 
-- Fede Arienti: fa.arienti@gmail.com
+- Fede Arienti: @fedeaar (fa.arienti@gmail.com) 
 - Natán Vekselman: @NatanVek 
+- Joni Bekenstein: @honi
 
 ## Release Notes 
 
