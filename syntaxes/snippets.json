@@ -1,7 +1,7 @@
 {
     "conjunto enteros - ℤ": {
         "prefix": [
-            "enteros"
+            "integer"
         ],
         "body": [
             "ℤ"
@@ -1124,6 +1124,15 @@
         ],
         "description": ""
     },
+    "strikethrough - ̸": {
+        "prefix": [
+            "strikethrough"
+        ],
+        "body": [
+            "̸"
+        ],
+        "description": ""
+    },
     "proc": {
         "prefix": [
             "proc"
@@ -1176,6 +1185,24 @@
         ],
         "description": ""
     },
+    "sum": {
+        "prefix": [
+            "sumatoria"
+        ],
+        "body": [
+            "(∑ ${1:i} = ${2:0}, ${3:n})(${4:s[n]})"
+        ],
+        "description": ""
+    },
+    "prod": {
+        "prefix": [
+            "productoria"
+        ],
+        "body": [
+            "(∏ ${1:i} = ${2:0}, ${3:n})(${4:s[n]})"
+        ],
+        "description": ""
+    },
     "if then else": {
         "prefix": [
             "if then else"
@@ -1185,7 +1212,7 @@
             "\t${2:expr}",
             "else",
             "\t${3:expr}",
-            "fi\n"
+            "endif;\n"
         ],
         "description": ""
     },
@@ -1196,7 +1223,7 @@
         "body": [
             "while ${1:cond} do",
             "\t${2:expr}",
-            "endwhile\n"
+            "endwhile;\n"
         ],
         "description": ""
     },
@@ -1205,68 +1232,77 @@
             "skip"
         ],
         "body": [
-            "skip\n"
+            "skip;\n"
         ],
         "description": ""
     },
     "Axioma 1: asignación": {
         "prefix": [
-            "ax1",
-            "axioma 1"
+            "axioma 1",
+            "ax1"
         ],
         "body": [
-            "def(${1:var}) ∧L ${2:(Q, x:y)}"
+            "wp(${1:x} := ${2:y}, ${3:Q}) ≡ def(${1:x}) ∧L (${3:Q}, ${1:x}:${2:y})"
         ],
         "description": "axioma de asignación de variables"
     },
     "Axioma 1: asignación s[i]": {
         "prefix": [
-            "ax1s",
-            "axioma 1 seq"
+            "axioma 1 s[i]",
+            "ax1s"
         ],
         "body": [
-            "(((def(${1:seq}) ∧ def(${2:i})) ∧L 0 ≤ ${2:i} < |${1:seq}|)  ∧ def(${3:var})) ∧L ${4:(Q, x:y)}"
+            "wp(${1:s}[${2:i}] := ${3:x}, ${4:Q}) ≡ (((def(${1:s}) ∧ def(${2:i})) ∧L 0 ≤ ${2:i} < |${1:s}|)  ∧ def(${3:x})) ∧L (${4:Q}, ${2:i}:${3:x})"
         ],
         "description": "axioma de asignación de variables"
     },
     "Axioma 2: skip": {
         "prefix": [
-            "ax2",
-            "axioma 2"
+            "axioma 2",
+            "ax2"
         ],
         "body": [
-            "${1:Q}"
+            "wp(skip, ${1:Q}) ≡ ${1:Q}"
         ],
         "description": "axioma skip"
     },
     "Axioma 3: secuencia": {
         "prefix": [
-            "ax3",
-            "axioma 3"
+            "axioma 3",
+            "ax3"
         ],
         "body": [
-            "wp(${1:S1}, wp(${2:S2}, ${3:Q}))"
+            "wp(${1:S1}; ${2:S2}, ${3:Q}) ≡ wp(${1:S1}, wp(${2:S2}, ${3:Q}))"
         ],
         "description": "axioma encadenador de expresiones"
     },
     "Axioma 4: condicional": {
         "prefix": [
-            "ax4",
-            "axioma 4"
+            "axioma 4",
+            "ax4"
         ],
         "body": [
-            "def(${1:B}) ∧L ((${1:B} ∧ wp(${2:S1}, ${4:Q})) ∨ (¬${1:B} ∧ wp(${3:S2}, ${4:Q})))"
+            "wp(if ${1:B} then ${2:S1} else ${3:S2} endif, ${4:Q}) ≡ def(${1:B}) ∧L ((${1:B} ∧ wp(${2:S1}, ${4:Q})) ∨ (¬${1:B} ∧ wp(${3:S2}, ${4:Q})))"
         ],
         "description": "axioma condicional"
     },
     "Axioma 5: ciclos": {
         "prefix": [
-            "ax5",
-            "axioma 5"
+            "axioma 5",
+            "ax5"
+        ],
+        "body": [
+            "wp(while ${1:B} do ${2:S} endwhile, ${3:Q}) ≡ (∃ i ≥ 0)(Hᵢ(${3:Q}))"
+        ],
+        "description": "axioma de ciclos"
+    },
+    "Teorema del Invariante": {
+        "prefix": [
+            "teorema invariate"
         ],
         "body": [
             "1. ${1:P} ⟹ ${2:I}",
-            "2. {${2:I}} ∧ ${3:B}} ${4:S} {${2:I}}",
+            "2. {${2:I} ∧ ${3:B}} ${4:S} {${2:I}}",
             "3. ${2:I} ∧ ¬${3:B} ⟹ ${5:Q}",
             "4. {${2:I} ∧ ${3:B} ∧ ${6:v₀} = ${7:fv}} ${4:S} {${7:fv} < ${6:v₀}}",
             "5. ${2:I} ∧ ${7:fv} ≤ 0 ⟹ ¬${3:B}",

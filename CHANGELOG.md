@@ -1,12 +1,34 @@
 # === Change Log === #
+## [0.0.5] - 2021-09-18 fixes y nuevas adiciones
+### added ###
+- grammar para Mat[]
+- grammar para length, head, tail, addFirst, concat, ++, subSeq, setAt, apariciones
+- grammar para div, mod
+- grammar para log, sin, cos, tan, asin, acos, atan
+- grammar para ord
+- ̸strikethrough  snippet
+- snippets para sumatoria y productoria (estructura)
+- grammar para endif
+- grammar para ⟹?
+- snippet teorema del invariante
+
+### fixed ###
+- color diferente para funciones de especificación en el theme
+- reescritura de axiomas 1 a 5
+
+## [0.0.4] - 2021-09-13 quickfixes
+### fixed ###
+- changelog.md
+- readme.md
+
 ## [0.0.3] - 2021-09-13 slconfig para edición de snippets
 ### added ###
 - for como palabra clave para las sumatorias
 - snippet yluego
 - snippets generales para sub y superscript
 - highlighting basico para funciones y secuencias
-- snippets para los axiomas generales (ax1 a ax5) por @Natanvek
-- un nuevo theme por @Natanvek
+- snippets para los axiomas generales (ax1 a ax5) por @NatanVek
+- un nuevo theme por @NatanVek
 - snippets para ⅀ ℿ ⟨ ⟩
 - un formato para crear y editar los snippets  a través de los comandos edit y commit snippets 
 - comandos nuevos: SmallLang-Spec : edit snippets, SmallLang-Spec: commit snippets (ojo tener todo guardado antes de usar, recarga el workspace), SmallLang-Spec: restore snippets

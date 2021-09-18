@@ -175,7 +175,7 @@ superscript W - ᵂ ; supW , ^W ; ᵂ
 Q.E.D - ■ ; QED ; ∎
 angle bracket - ⟨ ; anglel ; ⟨ 
 angle bracket - ⟩ ; angler ; ⟩
-
+strikethrough - ̸  ; strikethrough ;  ̸   
 
 ## --- compleción sintáctica --- ###
 
@@ -185,13 +185,17 @@ aux  ; aux ; aux ${1:name}(${2: args* : type_id}): ${3:return_type} = ${4:expr};
 type ; type ; type ${1:name} = ${2:declared_type};\n
 enum ; enum ; enum ${1:name}{ , \t${2:values} , };\n
 
-if then else ; if then else ; if ${1:cond} then , \t${2:expr} , else , \t${3:expr} , fi\n
-while do endwhile ; while do endwhile ; while ${1:cond} do , \t${2:expr} , endwhile\n
-skip ; skip ; skip\n
+sum ; sumatoria ; (∑ ${1:i} = ${2:0}, ${3:n})(${4:s[n]}) 
+prod ; productoria ; (∏ ${1:i} = ${2:0}, ${3:n})(${4:s[n]})
 
-Axioma 1: asignación ; ax1 , axioma 1 ; def(${1:var}) ∧L ${2:(Q, x:y)} ; axioma de asignación de variables
-Axioma 1: asignación s[i] ; ax1s , axioma 1 seq ; (((def(${1:seq}) ∧ def(${2:i})) ∧L 0 ≤ ${2:i} < |${1:seq}|)  ∧ def(${3:var})) ∧L ${4:(Q, x:y)} ; axioma de asignación de variables
-Axioma 2: skip ; ax2 , axioma 2 ; ${1:Q} ; axioma skip
-Axioma 3: secuencia ; ax3 , axioma 3 ; wp(${1:S1}, wp(${2:S2}, ${3:Q})) ; axioma encadenador de expresiones
-Axioma 4: condicional ; ax4 , axioma 4 ; def(${1:B}) ∧L ((${1:B} ∧ wp(${2:S1}, ${4:Q})) ∨ (¬${1:B} ∧ wp(${3:S2}, ${4:Q}))) ; axioma condicional
-Axioma 5: ciclos ; ax5 , axioma 5 ; 1. ${1:P} ⟹ ${2:I} , 2. {${2:I}} ∧ ${3:B}} ${4:S} {${2:I}} , 3. ${2:I} ∧ ¬${3:B} ⟹ ${5:Q} , 4. {${2:I} ∧ ${3:B} ∧ ${6:v₀} = ${7:fv}} ${4:S} {${7:fv} < ${6:v₀}} , 5. ${2:I} ∧ ${7:fv} ≤ 0 ⟹ ¬${3:B} , 6. {${1:P}} while ${3:B} do ${4:S} endwhile {${5:Q}} ; axioma ciclos
+if then else ; if then else ; if ${1:cond} then , \t${2:expr} , else , \t${3:expr} , endif;\n
+while do endwhile ; while do endwhile ; while ${1:cond} do , \t${2:expr} , endwhile;\n
+skip ; skip ; skip;\n
+
+Axioma 1: asignación ; axioma 1 , ax1 ; wp(${1:x} := ${2:y}, ${3:Q}) ≡ def(${1:x}) ∧L (${3:Q}, ${1:x}:${2:y}) ; axioma de asignación de variables
+Axioma 1: asignación s[i] ; axioma 1 s[i] , ax1s ; wp(${1:s}[${2:i}] := ${3:x}, ${4:Q}) ≡ (((def(${1:s}) ∧ def(${2:i})) ∧L 0 ≤ ${2:i} < |${1:s}|)  ∧ def(${3:x})) ∧L (${4:Q}, ${2:i}:${3:x}) ; axioma de asignación de variables
+Axioma 2: skip ; axioma 2 , ax2 ; wp(skip, ${1:Q}) ≡ ${1:Q} ; axioma skip
+Axioma 3: secuencia ; axioma 3 , ax3 ; wp(${1:S1}; ${2:S2}, ${3:Q}) ≡ wp(${1:S1}, wp(${2:S2}, ${3:Q})) ; axioma encadenador de expresiones
+Axioma 4: condicional ; axioma 4 , ax4 ; wp(if ${1:B} then ${2:S1} else ${3:S2} endif, ${4:Q}) ≡ def(${1:B}) ∧L ((${1:B} ∧ wp(${2:S1}, ${4:Q})) ∨ (¬${1:B} ∧ wp(${3:S2}, ${4:Q}))) ; axioma condicional
+Axioma 5: ciclos ; axioma 5 , ax5 ; wp(while ${1:B} do ${2:S} endwhile, ${3:Q}) ≡ (∃ i ≥ 0)(Hᵢ(${3:Q})) ; axioma de ciclos
+Teorema del Invariante ; teorema invariate ; 1. ${1:P} ⟹ ${2:I} , 2. {${2:I} ∧ ${3:B}} ${4:S} {${2:I}} , 3. ${2:I} ∧ ¬${3:B} ⟹ ${5:Q} , 4. {${2:I} ∧ ${3:B} ∧ ${6:v₀} = ${7:fv}} ${4:S} {${7:fv} < ${6:v₀}} , 5. ${2:I} ∧ ${7:fv} ≤ 0 ⟹ ¬${3:B} , 6. {${1:P}} while ${3:B} do ${4:S} endwhile {${5:Q}} ; axioma ciclos

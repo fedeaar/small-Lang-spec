@@ -17,7 +17,7 @@
 			}
 		},
 		{
-			"name": "if  / fi / while / endwhile / skip / :=",
+			"name": "if  / fi / endif / while / endwhile / skip / :=",
 			"scope": [
 				"keyword.function.slspec"
 			],
@@ -33,7 +33,7 @@
 			],
 			"settings":{
 				"fontStyle": "italic bold",
-				"foreground": ""
+				"foreground": "#6daadf"
 			}
 		},
 		{
@@ -77,7 +77,7 @@
 			}
 		},
 		{
-			"name": "seq[]",
+			"name": "seq[] / mat[]",
 			"scope": [
 				"entity.name.type.seq.slspec"
 			],

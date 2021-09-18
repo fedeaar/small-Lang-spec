@@ -91,3 +91,5 @@ function cmdRestoreSnippets(context : vscode.ExtensionContext) : void
 		'./syntaxes/config/snippets.slconfig,',
 		cmdCommitSnippets);
 }
+
+

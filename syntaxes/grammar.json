@@ -15,6 +15,8 @@
                 { "include": "#entity.name.type.slspec" },
                 { "include": "#entity.name.type.seq.slspec" },
                 { "include": "#entity.name.type.seq.angle.slspec" },
+                { "include": "#entity.name.type.mat.slspec" },
+                { "include": "#entity.name.type.mat.angle.slspec" },
                 { "include": "#entity.name.function.slspec" },
                 { "include": "#entity.name.function.type.slspec" },
                 { "include": "#entity.name.function.enum.slspec" },
@@ -34,7 +36,7 @@
             "name": "keyword.control.slspec"
         },
         "keyword.function.slspec": {
-            "match":"(?i)\\b(if|fi|while|endwhile|skip)\\b|\\:\\=",
+            "match":"(?i)\\b(if|fi|endif|while|endwhile|skip)\\b|\\:\\=",
             "name":"keyword.function.slspec"
         },
         "keyword.function.inner.slspec": {
@@ -42,23 +44,32 @@
             "name":"keyword.function.inner.slspec"
         },
         "support.function.slspec": {
-            "match":"(?i)\\b(sum|prod)\\b|∑|∏|⅀|ℿ",
+            "match":"(?i)\\b(sum|prod|length|head|tail|addFirst|concat|subSeq|setAt|apariciones|ord|div|mod|pot|log|sin|cos|tan|asin|acos|atan|abs)\\b|∑|∏|⅀|ℿ|\\+\\+",
             "name":"support.function.slspec"
         },
         "support.function.inner.slspec": {
-            "match":"\\b(from|to|for)\\b",
+            "match":"(?i)\\b(from|to|for)\\b",
             "name":"support.function.inner.slspec"
         },
         "variable.parameter.slspec": {
-            "match": "\\b(in|out|inout)\\b",
+            "match": "(?i)\\b(in|out|inout)\\b",
             "name": "variable.parameter.slspec"
         },
         "entity.name.type.slspec": {
-            "match":"\\b(ℤ|ℝ|Char|Bool|T)\\b|⨉",
+            "match":"(?i)\\b(ℤ|ℝ|Char|Bool|T)\\b|⨉",
             "name":"entity.name.type.slspec"
         },
         "entity.name.type.seq.slspec": {
-            "begin": "\\bseq\\[",
+            "begin": "(?i)\\bseq\\[",
+            "end":"\\]",
+            "name":"entity.name.type.seq.slspec",
+            "patterns":[
+                { "include": "#entity.name.type.slspec"}, 
+                {"include":"#entity.name.type.seq.slspec"}
+            ]
+        },
+        "entity.name.type.mat.slspec": {
+            "begin": "(?i)\\bmat\\[",
             "end":"\\]",
             "name":"entity.name.type.seq.slspec",
             "patterns":[
@@ -67,7 +78,16 @@
             ]
         },
         "entity.name.type.seq.angle.slspec": {
-            "begin": "\\bseq⟨",
+            "begin": "(?i)\\bseq⟨",
+            "end":"\\⟩",
+            "name":"entity.name.type.seq.slspec",
+            "patterns":[
+                { "include": "#entity.name.type.slspec"}, 
+                {"include":"#entity.name.type.seq.slspec"}
+            ]
+        },
+        "entity.name.type.mat.angle.slspec": {
+            "begin": "(?i)\\bmat⟨",
             "end":"\\⟩",
             "name":"entity.name.type.seq.slspec",
             "patterns":[
@@ -92,7 +112,7 @@
             "name":"variable.other.readwrite.slspec"
         },
         "constant.language.slspec": {
-            "match":"\\b(true|false)\\b|⊥",
+            "match":"(?i)\\b(true|false)\\b|⊥",
             "name":"constant.language.slspec"
         },
         "constant.numeric.slspec": {
@@ -104,11 +124,11 @@
             "name":"constant.character.slspec"
         },
         "keyword.operator.logic.slspec": {
-            "match":"(∧L|∨L|∧|∨|⟹L|⟸|⟹|⟺|≡|∀|∃|∄|¬|⋂|⋃|⊂|⊄|∈|∉|⊆|⊈|&&|\\|\\|)",
+            "match":"(∧L|∨L|∧|∨|⟹L|⟹\\?|⟸|⟹|⟺|≡|∀|∃|∄|¬|⋂|⋃|⊂|⊄|∈|∉|⊆|⊈|&&|\\|\\|)",
             "name":"keyword.operator.logic.slspec"
         },
         "keyword.operator.math.slspec": {
-            "match":"(\\+|\\-|\\=|\\*|≠|≤|\\<|≥|\\>|∎|\\%|\\^)",
+            "match":"(\\+|\\-|\\=|\\*|≠|≤|\\<|≥|\\>|∎|\\%|\\^|\\#)",
             "name":"keyword.operator.math.slspec"
         },
         "punctuation.definition.slspec": {
