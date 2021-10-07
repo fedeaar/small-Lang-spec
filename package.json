@@ -19,7 +19,8 @@
 		"onCommand:smallLang-spec.restoreTheme",
 		"onCommand:smallLang-spec.editSnippets",
 		"onCommand:smallLang-spec.commitSnippets",
-		"onCommand:smallLang-spec.restoreSnippets"
+		"onCommand:smallLang-spec.restoreSnippets",
+		"onCommand:smallLang-spec.latexify"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
@@ -47,6 +48,10 @@
 			{
 				"command": "smallLang-spec.restoreSnippets",
 				"title": "SmallLang-Spec: restore snippets"
+			},
+			{
+				"command": "smallLang-spec.latexify",
+				"title": "SmallLang-Spec: translate current file to latex EXPERIMENTAL"
 			}
 		],
 		"languages": [

@@ -1,6 +1,7 @@
 import * as vscode from 'vscode';
 import {path, uri, open, show, del, cpy, reloadWindow, restore} from './utils/interfaces';
 import { convertToJSON } from './utils/slconfigToJSON';
+import { convertToLatex} from './utils/slspecToLatex';
 
 export function activate(context: vscode.ExtensionContext): void 
 {	
@@ -40,6 +41,11 @@ export function activate(context: vscode.ExtensionContext): void
 		'smallLang-spec.restoreSnippets', 
 		() => cmdRestoreSnippets(context));
 	context.subscriptions.push(restoreSnippets);
+
+	let latexify = vscode.commands.registerCommand(
+		'smallLang-spec.latexify', 
+		() => cmdLatexify(context));
+	context.subscriptions.push(latexify);
 } 
 
 export function deactivate() 
@@ -92,4 +98,20 @@ function cmdRestoreSnippets(context : vscode.ExtensionContext) : void
 		cmdCommitSnippets);
 }
 
-
+function cmdLatexify(context : vscode.ExtensionContext) : void
+{
+	let document = vscode.window.activeTextEditor?.document;
+	if (document) {
+		let path = vscode.workspace.getWorkspaceFolder(document.uri);
+		let text = document.getText();
+		let head = '\\documentclass[a4paper]{article}\n\\usepackage[utf8]{inputenc}\n\\begin{document}\n';
+		let tail = '\n\\end{document}';
+		text = head + convertToLatex(text) + tail;
+		vscode.workspace.openTextDocument({
+			content: text, 
+			language: "latex"
+		}).then(
+			document => vscode.window.showTextDocument(document, vscode.ViewColumn.Beside)
+		);
+	}
+}

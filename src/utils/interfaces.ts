@@ -12,8 +12,9 @@ export function open(fullPath: string) : Thenable<vscode.TextDocument>
 {
 	return vscode.workspace.openTextDocument(fullPath);
 }
-export function show(fullPath: string) : Thenable<vscode.TextEditor>
+export function show(fullPath: string | undefined) : Thenable<vscode.TextEditor> | void
 {
+	if (fullPath === undefined) return;
 	return open(fullPath).then(document => vscode.window.showTextDocument(document, vscode.ViewColumn.Beside));
 }
 export function del(uri:vscode.Uri) : Thenable<void>
@@ -26,7 +27,9 @@ export function cpy(from:vscode.Uri, to:vscode.Uri) : Thenable<void>
 }
 export function reloadWindow() : void
 {	
-	vscode.commands.executeCommand('workbench.action.reloadWindow');
+	vscode.workspace.saveAll().then(
+		() => vscode.commands.executeCommand('workbench.action.reloadWindow')
+	);
 }
 export function restore (
 	context: vscode.ExtensionContext, 
@@ -47,4 +50,3 @@ export function restore (
 	})
 	.then(() => reloadWindow());
 }
-
