@@ -78,8 +78,7 @@ let reemplazos : {[reemplazar : string] : string } = {
 
 export function convertToLatex(str : string) : string {
     for (let key in reemplazos) {
-        let reg = new RegExp(cleanStr(key), 'g');
-        str = str.replace(reg, reemplazos[key]); 
+        str = str.replace(key, reemplazos[key]); // fede : se refiere a replaceAll() ?
     }
     str = boldAndIndent("aux", str);
     str = boldAndIndent("pred", str);
@@ -138,7 +137,7 @@ function nextPar(type : string, str : string, pos : number) {
 }
 function replaceAll(str : string, p1 : string, p2 : string, from = 0, to = str.length) {
     let tail = str.substring(from, to);
-    tail = replaceAll(tail, p1, p2); 
+    tail = replaceAll(tail, p1, p2); // fede : idem
     return str.substring(0, from) + tail + str.substr(to, str.length);
 }
 
@@ -160,10 +159,6 @@ function replace(str : string, p1 : string, p2 : string, from = 0) {
     return str.substring(0, from) + tail;
 }
 
-function cleanStr(str : string)
-{
-    return str.replace(/[#-}]/g, '\\$&');
-}
 // function addStr(str, index, stringToAdd) {
 //     return str.substring(0, index) + stringToAdd + str.substr(index)
 // }
