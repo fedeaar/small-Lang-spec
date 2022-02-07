@@ -2,8 +2,8 @@
 	"name": "smalllang-spec",
 	"displayName": "smallLang-Spec grammar",
 	"publisher": "fedeaar",
-	"repository":"https://github.com/fedeaar/small-Lang-spec",
-	"icon":"images/icon.PNG",
+	"repository": "https://github.com/fedeaar/small-Lang-spec",
+	"icon": "images/icon.PNG",
 	"description": "syntax y semántica para SmallLang (como aparece en David Gries: Science of Programming - 1981) y la notación para especificación de Algoritmos y Estructuras de Datos I (UBA).",
 	"version": "0.0.5",
 	"engines": {
@@ -78,17 +78,17 @@
 			}
 		],
 		"themes": [
-            {
-                "label": "smallLang Spec",
-				"uiTheme": "vs-dark",
-                "path": "./syntaxes/color-theme.json"
-            },
 			{
-                "label": "smallLang Spec: Natanvek edit",
+				"label": "smallLang Spec",
 				"uiTheme": "vs-dark",
-                "path": "./syntaxes/natanvek.color-theme.json"
-            }
-        ],
+				"path": "./syntaxes/color-theme.json"
+			},
+			{
+				"label": "smallLang Spec: Natanvek edit",
+				"uiTheme": "vs-dark",
+				"path": "./syntaxes/natanvek.color-theme.json"
+			}
+		],
 		"snippets": [
 			{
 				"language": "smallLang-spec",
@@ -105,15 +105,15 @@
 		"test": "node ./out/test/runTest.js"
 	},
 	"devDependencies": {
-		"@types/vscode": "^1.60.0",
 		"@types/glob": "^7.1.3",
 		"@types/mocha": "^8.2.2",
 		"@types/node": "14.x",
-		"eslint": "^7.27.0",
+		"@types/vscode": "^1.60.0",
 		"@typescript-eslint/eslint-plugin": "^4.26.0",
 		"@typescript-eslint/parser": "^4.26.0",
+		"eslint": "^7.27.0",
 		"glob": "^7.1.7",
-		"mocha": "^8.4.0",
+		"mocha": "^9.2.0",
 		"typescript": "^4.3.2",
 		"vscode-test": "^1.5.2"
 	}

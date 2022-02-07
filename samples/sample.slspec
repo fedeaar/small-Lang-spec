@@ -5,7 +5,7 @@ proc sumarUltimo(in s: seq[ℤ], in i: ℤ, inout a: ℤ) {
         0 ≤ i < |s| ∧L a = (∑ j = 0, i - 1)(if s[j] ≠ 0 then 1 else 0 fi)
     }
     post { Q ≡ 
-        a =  a = (∑ j = 0, i)(if s[j] ≠ 0 then 1 else 0 fi)
+        a = (∑ j = 0, i)(if s[j] ≠ 0 then 1 else 0 fi)
     } 
 } 
 
