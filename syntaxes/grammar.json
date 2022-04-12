@@ -21,6 +21,7 @@
                 { "include": "#entity.name.function.type.slspec" },
                 { "include": "#entity.name.function.enum.slspec" },
                 { "include": "#variable.other.readwrite.slspec"},
+                { "include": "#variable.name.slspec" },
                 { "include": "#constant.language.slspec" },
                 { "include": "#constant.numeric.slspec" },
                 { "include": "#constant.character.slspec" },
@@ -134,6 +135,11 @@
         "punctuation.definition.slspec": {
             "match":"(\\{|\\}|\\(|\\)|\\]|\\[|⟨|⟩|\\|)",
             "name":"punctuation.parenthesis.slspec"
+        },
+        
+        "variable.name.slspec": {
+            "match":"(\\b)([a-z]|[A-Z])(\\b)",
+            "name":"variable.name.slspec"
         },
         "comment.block.slspec": {
             "begin": "\/\\*",
