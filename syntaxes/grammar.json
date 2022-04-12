@@ -45,7 +45,7 @@
             "name":"keyword.function.inner.slspec"
         },
         "variable.name.slspec": {
-            "match":"(\\b)([a-z]|[A-Z])(\\b)",
+            "match":"(\\b)([a-z]|[A-Z])((\\d)?)(\\b)",
             "name":"variable.name.slspec"
         },
         "support.function.slspec": {
@@ -115,7 +115,7 @@
             "name":"keyword.operator.logic.slspec"
         },
         "keyword.operator.math.slspec": {
-            "match":"(\\+|\\-|\\=|\\*|≠|≤|\\<|≥|\\>|∎|\\%|\\^|\\#|×)",
+            "match":"(\\+|\\-|\\=|\\*|≠|≤|\\<|≥|\\>|∎|\\%|\\^|\\#|×|\\!)",
             "name":"keyword.operator.math.slspec"
         },
         "punctuation.definition.slspec": {
