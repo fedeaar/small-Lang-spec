@@ -17,9 +17,9 @@
 			}
 		},
 		{
-			"name": "if  / fi / endif / while / endwhile / skip / :=",
+			"name": "if  / fi / endif / while / endwhile / skip / := /",
 			"scope": [
-				"keyword.function.slspec"
+				"keyword.function.slspec", "keyword.function.inner.slspec"
 			],
 			"settings":{
 				"fontStyle": "italic",
@@ -34,16 +34,6 @@
 			"settings":{
 				"fontStyle": "italic bold",
 				"foreground": "#ffa13d"
-			}
-		},
-		{
-			"name": "then  / else / do",
-			"scope": [
-				"keyword.function.inner.slspec"
-			],
-			"settings":{
-				"fontStyle": "",
-				"foreground": "#82d8ee"
 			}
 		},
 		{
