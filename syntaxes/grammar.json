@@ -12,6 +12,7 @@
                 { "include": "#support.function.slspec" },
                 { "include": "#support.function.inner.slspec" },
                 { "include": "#variable.parameter.slspec" },
+                { "include": "#variable.name.slspec" },
                 { "include": "#entity.name.type.slspec" },
                 { "include": "#entity.name.type.seq.slspec" },
                 { "include": "#entity.name.type.seq.angle.slspec" },
@@ -21,7 +22,6 @@
                 { "include": "#entity.name.function.type.slspec" },
                 { "include": "#entity.name.function.enum.slspec" },
                 { "include": "#variable.other.readwrite.slspec"},
-                { "include": "#variable.name.slspec" },
                 { "include": "#constant.language.slspec" },
                 { "include": "#constant.numeric.slspec" },
                 { "include": "#constant.character.slspec" },
@@ -44,6 +44,10 @@
             "match":"(?i)\\b(then|else|do)\\b",
             "name":"keyword.function.inner.slspec"
         },
+        "variable.name.slspec": {
+            "match":"(\\b)([a-z]|[A-Z])(\\b)",
+            "name":"variable.name.slspec"
+        },
         "support.function.slspec": {
             "match":"(?i)\\b(sum|prod|length|head|tail|addFirst|concat|subSeq|setAt|apariciones|ord|div|mod|pot|log|sin|cos|tan|asin|acos|atan|abs)\\b|∑|∏|⅀|ℿ|\\+\\+",
             "name":"support.function.slspec"
@@ -57,30 +61,12 @@
             "name": "variable.parameter.slspec"
         },
         "entity.name.type.slspec": {
-            "match":"(?i)\\b(ℤ|ℝ|Char|Bool|T)\\b|⨉",
+            "match":"(?i)\\b(ℤ|ℝ|Char|Bool|T|Nat|𝕋)\\b|⨉",
             "name":"entity.name.type.slspec"
-        },
-        "entity.name.type.seq.slspec": {
-            "begin": "(?i)\\bseq\\[",
-            "end":"\\]",
-            "name":"entity.name.type.seq.slspec",
-            "patterns":[
-                { "include": "#entity.name.type.slspec"}, 
-                {"include":"#entity.name.type.seq.slspec"}
-            ]
         },
         "entity.name.type.mat.slspec": {
             "begin": "(?i)\\bmat\\[",
             "end":"\\]",
-            "name":"entity.name.type.seq.slspec",
-            "patterns":[
-                { "include": "#entity.name.type.slspec"}, 
-                {"include":"#entity.name.type.seq.slspec"}
-            ]
-        },
-        "entity.name.type.seq.angle.slspec": {
-            "begin": "(?i)\\bseq⟨",
-            "end":"\\⟩",
             "name":"entity.name.type.seq.slspec",
             "patterns":[
                 { "include": "#entity.name.type.slspec"}, 
@@ -97,7 +83,7 @@
             ]
         },
         "entity.name.function.slspec": {
-            "match":"\\b[\\D&&\\w]\\w*\\b\\s*(?=\\()",
+            "match":"\\b[\\D&&\\w]\\w*(\\?|\\b)\\s*(?=\\()",
             "name":"entity.name.function.slspec"
         },
         "entity.name.function.type.slspec": {
@@ -109,7 +95,7 @@
             "name":"entity.name.function.slspec"
         },
         "variable.other.readwrite.slspec": {
-            "match":"\\b[\\D&&\\w]\\w*(?=\\[)",
+            "match":"(\\b[\\D&&\\w]\\w*(?=(\\[|⟨)))|((?<=\\|)(\\w*)(?=\\|))",
             "name":"variable.other.readwrite.slspec"
         },
         "constant.language.slspec": {
@@ -125,21 +111,16 @@
             "name":"constant.character.slspec"
         },
         "keyword.operator.logic.slspec": {
-            "match":"(∧L|∨L|∧|∨|⟹L|⟹\\?|⟸|⟹|⟺|≡|∀|∃|∄|¬|⋂|⋃|⊂|⊄|∈|∉|⊆|⊈|&&|\\|\\|)",
+            "match":"(∧L|∨L|∧|∨|⟹L|⟹\\?|⟸|⟶|⟹|⟺|≡|∀|∃|∄|¬|⋂|⋃|⊂|⊄|∈|∉|⊆|⊈|&&|\\|\\|)",
             "name":"keyword.operator.logic.slspec"
         },
         "keyword.operator.math.slspec": {
-            "match":"(\\+|\\-|\\=|\\*|≠|≤|\\<|≥|\\>|∎|\\%|\\^|\\#)",
+            "match":"(\\+|\\-|\\=|\\*|≠|≤|\\<|≥|\\>|∎|\\%|\\^|\\#|×)",
             "name":"keyword.operator.math.slspec"
         },
         "punctuation.definition.slspec": {
             "match":"(\\{|\\}|\\(|\\)|\\]|\\[|⟨|⟩|\\|)",
             "name":"punctuation.parenthesis.slspec"
-        },
-        
-        "variable.name.slspec": {
-            "match":"(\\b)([a-z]|[A-Z])(\\b)",
-            "name":"variable.name.slspec"
         },
         "comment.block.slspec": {
             "begin": "\/\\*",
