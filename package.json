@@ -116,5 +116,11 @@
 		"mocha": "^9.2.0",
 		"typescript": "^4.3.2",
 		"vscode-test": "^1.5.2"
+	},
+	"__metadata": {
+		"id": "7b2f9b1f-c560-4fae-b39a-48384d16d915",
+		"publisherDisplayName": "fedeaar",
+		"publisherId": "3cc47de3-0b72-4b37-acab-55dd5d9d3d8f",
+		"isPreReleaseVersion": false
 	}
 }
