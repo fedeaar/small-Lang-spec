@@ -1,7 +1,7 @@
 {
     "conjunto enteros - ℤ": {
         "prefix": [
-            "integer"
+            "integer","\\integer"
         ],
         "body": [
             "ℤ"
@@ -10,7 +10,7 @@
     },
     "conjunto reales  - ℝ": {
         "prefix": [
-            "float"
+            "float","\\float"
         ],
         "body": [
             "ℝ"
@@ -19,7 +19,7 @@
     },
     "union - ⋃": {
         "prefix": [
-            "union"
+            "union","\\union"
         ],
         "body": [
             "⋃"
@@ -28,7 +28,7 @@
     },
     "interseccion - ⋂": {
         "prefix": [
-            "interseccion"
+            "interseccion","\\interseccion"
         ],
         "body": [
             "⋂"
@@ -37,7 +37,7 @@
     },
     "subconjunto - ⊂": {
         "prefix": [
-            "subconjunto"
+            "subconjunto","\\subconjunto"
         ],
         "body": [
             "⊂"
@@ -55,7 +55,7 @@
     },
     "no es subconjunto - ⊄": {
         "prefix": [
-            "nsubconjunto"
+            "nsubconjunto","\\nsubconjunto"
         ],
         "body": [
             "⊄"
@@ -73,7 +73,7 @@
     },
     "pertenece - ∈": {
         "prefix": [
-            "pertenece"
+            "pertenece","\\pertenece"
         ],
         "body": [
             "∈"
@@ -82,7 +82,7 @@
     },
     "no pertenece - ∉": {
         "prefix": [
-            "npertenece"
+            "npertenece","\\npertenece"
         ],
         "body": [
             "∉"
@@ -91,7 +91,7 @@
     },
     "para todos - ∀": {
         "prefix": [
-            "forall"
+            "forall","\\forall"
         ],
         "body": [
             "∀"
@@ -100,7 +100,7 @@
     },
     "existe - ∃": {
         "prefix": [
-            "exists"
+            "exists","\\exists"
         ],
         "body": [
             "∃"
@@ -109,7 +109,7 @@
     },
     "no existe - ∄": {
         "prefix": [
-            "nexists"
+            "nexists","\\nexists"
         ],
         "body": [
             "∄"
@@ -118,7 +118,7 @@
     },
     "negacion - ¬": {
         "prefix": [
-            "not"
+            "not","\\not"
         ],
         "body": [
             "¬"
@@ -127,7 +127,7 @@
     },
     "y - ∧": {
         "prefix": [
-            "y"
+            "y","\\y"
         ],
         "body": [
             "∧"
@@ -136,7 +136,7 @@
     },
     "y - ∧L": {
         "prefix": [
-            "yluego"
+            "yluego","\\yluego"
         ],
         "body": [
             "∧L"
@@ -145,7 +145,7 @@
     },
     "o - ∨": {
         "prefix": [
-            "o"
+            "o","\\o"
         ],
         "body": [
             "∨"
@@ -154,7 +154,7 @@
     },
     "o - ∨L": {
         "prefix": [
-            "oluego"
+            "oluego","\\oluego"
         ],
         "body": [
             "∨L"
@@ -163,7 +163,7 @@
     },
     "implica - ⟹": {
         "prefix": [
-            "implica"
+            "implica","\\implica"
         ],
         "body": [
             "⟹"
@@ -172,7 +172,7 @@
     },
     "implica luego - ⟹L": {
         "prefix": [
-            "implicaluego"
+            "implicaluego","\\implicaluego"
         ],
         "body": [
             "⟹L"
@@ -181,7 +181,7 @@
     },
     "implica izquierda - ⟸": {
         "prefix": [
-            "implicaizq"
+            "implicaizq","\\implicaizq"
         ],
         "body": [
             "⟸"
@@ -190,7 +190,7 @@
     },
     "biimplicación - ⟺": {
         "prefix": [
-            "iff, biimplicacion"
+            "iff","\\iff"
         ],
         "body": [
             "⟺"
@@ -199,7 +199,7 @@
     },
     "equivalente - ≡": {
         "prefix": [
-            "equivalente"
+            "equivalente","\\equivalente"
         ],
         "body": [
             "≡"
@@ -208,7 +208,7 @@
     },
     "indefinido - ⊥": {
         "prefix": [
-            "indefinido"
+            "indefinido","\\indefinido"
         ],
         "body": [
             "⊥"
@@ -217,7 +217,7 @@
     },
     "sumatoria - ∑": {
         "prefix": [
-            "sum"
+            "sum","\\sum"
         ],
         "body": [
             "∑"
@@ -226,7 +226,7 @@
     },
     "sumatoria - ⅀": {
         "prefix": [
-            "sumbold"
+            "sumbold","\\sumbold"
         ],
         "body": [
             "⅀"
@@ -235,7 +235,7 @@
     },
     "productoria - ∏": {
         "prefix": [
-            "product"
+            "product","\\product"
         ],
         "body": [
             "∏"
@@ -244,7 +244,7 @@
     },
     "productoria - ℿ": {
         "prefix": [
-            "productbold"
+            "productbold","\\productbold"
         ],
         "body": [
             "ℿ"
@@ -253,7 +253,7 @@
     },
     "desigual - ≠": {
         "prefix": [
-            "neq"
+            "neq","\\neq"
         ],
         "body": [
             "≠"
@@ -262,7 +262,7 @@
     },
     "menor o igual - ≤": {
         "prefix": [
-            "leq"
+            "leq","\\leq"
         ],
         "body": [
             "≤"
@@ -271,7 +271,7 @@
     },
     "mayor o igual - ≥": {
         "prefix": [
-            "geq"
+            "geq","\\geq"
         ],
         "body": [
             "≥"
@@ -280,7 +280,7 @@
     },
     "producto cruz - ⨉": {
         "prefix": [
-            "cruz"
+            "cruz","\\cruz"
         ],
         "body": [
             "⨉"
@@ -289,7 +289,7 @@
     },
     "subscript 0 - ₀": {
         "prefix": [
-            "sub0",
+            "sub0","\\sub0",
             "_0"
         ],
         "body": [
@@ -299,7 +299,7 @@
     },
     "subscript 1 - ₁": {
         "prefix": [
-            "sub1",
+            "sub1","\\sub1",
             "_1"
         ],
         "body": [
@@ -309,7 +309,7 @@
     },
     "subscript 2 - ₂": {
         "prefix": [
-            "sub2",
+            "sub2","\\sub2",
             "_2"
         ],
         "body": [
@@ -319,7 +319,7 @@
     },
     "subscript 3 - ₃": {
         "prefix": [
-            "sub3",
+            "sub3","\\sub3",
             "_3"
         ],
         "body": [
@@ -329,7 +329,7 @@
     },
     "subscript 4 - ₄": {
         "prefix": [
-            "sub4",
+            "sub4","\\sub4",
             "_4"
         ],
         "body": [
@@ -339,7 +339,7 @@
     },
     "subscript 5 - ₅": {
         "prefix": [
-            "sub5",
+            "sub5","\\sub5",
             "_5"
         ],
         "body": [
@@ -349,7 +349,7 @@
     },
     "subscript 6 - ₆": {
         "prefix": [
-            "sub6",
+            "sub6","\\sub6",
             "_6"
         ],
         "body": [
@@ -359,7 +359,7 @@
     },
     "subscript 7 - ₇": {
         "prefix": [
-            "sub7",
+            "sub7","\\sub7",
             "_7"
         ],
         "body": [
@@ -369,7 +369,7 @@
     },
     "subscript 8 - ₈": {
         "prefix": [
-            "sub8",
+            "sub8","\\sub8",
             "_8"
         ],
         "body": [
@@ -379,7 +379,7 @@
     },
     "subscript 9 - ₉": {
         "prefix": [
-            "sub9",
+            "sub9","\\sub9",
             "_9"
         ],
         "body": [
@@ -389,7 +389,7 @@
     },
     "subscript a - ₐ": {
         "prefix": [
-            "suba",
+            "suba","\\suba",
             "_a"
         ],
         "body": [
@@ -399,7 +399,7 @@
     },
     "subscript e - ₑ": {
         "prefix": [
-            "sube",
+            "sube","\\sube",
             "_e"
         ],
         "body": [
@@ -409,7 +409,7 @@
     },
     "subscript h - ₕ": {
         "prefix": [
-            "subh",
+            "subh","\\subh",
             "_h"
         ],
         "body": [
@@ -419,7 +419,7 @@
     },
     "subscript i - ᵢ": {
         "prefix": [
-            "subi",
+            "subi","\\subi",
             "_i"
         ],
         "body": [
@@ -429,7 +429,7 @@
     },
     "subscript j - ⱼ": {
         "prefix": [
-            "subj",
+            "subj","\\subj",
             "_j"
         ],
         "body": [
@@ -439,7 +439,7 @@
     },
     "subscript k - ₖ": {
         "prefix": [
-            "subk",
+            "subk","\\subk",
             "_k"
         ],
         "body": [
@@ -449,7 +449,7 @@
     },
     "subscript l - ₗ": {
         "prefix": [
-            "subl",
+            "subl","\\subl",
             "_l"
         ],
         "body": [
@@ -459,7 +459,7 @@
     },
     "subscript m - ₘ": {
         "prefix": [
-            "subm",
+            "subm","\\subm",
             "_m"
         ],
         "body": [
@@ -469,7 +469,7 @@
     },
     "subscript n - ₙ": {
         "prefix": [
-            "subn",
+            "subn","\\subn",
             "_n"
         ],
         "body": [
@@ -479,7 +479,7 @@
     },
     "subscript o - ₒ": {
         "prefix": [
-            "subo",
+            "subo","\\subo",
             "_o"
         ],
         "body": [
@@ -489,7 +489,7 @@
     },
     "subscript p - ₚ": {
         "prefix": [
-            "subp",
+            "subp","\\subp",
             "_p"
         ],
         "body": [
@@ -499,7 +499,7 @@
     },
     "subscript r - ᵣ": {
         "prefix": [
-            "subr",
+            "subr","\\subr",
             "_r"
         ],
         "body": [
@@ -509,7 +509,7 @@
     },
     "subscript s - ₛ": {
         "prefix": [
-            "subs",
+            "subs","\\subs",
             "_s"
         ],
         "body": [
@@ -519,7 +519,7 @@
     },
     "subscript t - ₜ": {
         "prefix": [
-            "subt",
+            "subt","\\subt",
             "_t"
         ],
         "body": [
@@ -529,7 +529,7 @@
     },
     "subscript u - ᵤ": {
         "prefix": [
-            "subv",
+            "subv","\\subv",
             "_v"
         ],
         "body": [
@@ -539,7 +539,7 @@
     },
     "subscript v - ᵥ": {
         "prefix": [
-            "subu",
+            "subu","\\subu",
             "_u"
         ],
         "body": [
@@ -549,7 +549,7 @@
     },
     "subscript x - ₓ": {
         "prefix": [
-            "subx",
+            "subx","\\subx",
             "_x"
         ],
         "body": [
@@ -559,7 +559,7 @@
     },
     "superscript 0 - ⁰": {
         "prefix": [
-            "sup0",
+            "sup0","\\sup0",
             "^0"
         ],
         "body": [
@@ -569,7 +569,7 @@
     },
     "superscript 1 - ¹": {
         "prefix": [
-            "sup1",
+            "sup1","\\sup1",
             "^1"
         ],
         "body": [
@@ -579,7 +579,7 @@
     },
     "superscript 2 - ²": {
         "prefix": [
-            "sup2",
+            "sup2","\\sup2",
             "^2"
         ],
         "body": [
@@ -589,7 +589,7 @@
     },
     "superscript 3 - ³": {
         "prefix": [
-            "sup3",
+            "sup3","\\sup3",
             "^3"
         ],
         "body": [
@@ -599,7 +599,7 @@
     },
     "superscript 4 - ⁴": {
         "prefix": [
-            "sup4",
+            "sup4","\\sup4",
             "^4"
         ],
         "body": [
@@ -609,7 +609,7 @@
     },
     "superscript 5 - ⁵": {
         "prefix": [
-            "sup5",
+            "sup5","\\sup5",
             "^5"
         ],
         "body": [
@@ -619,7 +619,7 @@
     },
     "superscript 6 - ⁶": {
         "prefix": [
-            "sup6",
+            "sup6","\\sup6",
             "^6"
         ],
         "body": [
@@ -629,7 +629,7 @@
     },
     "superscript 7 - ⁷": {
         "prefix": [
-            "sup7",
+            "sup7","\\sup7",
             "^7"
         ],
         "body": [
@@ -639,7 +639,7 @@
     },
     "superscript 8 - ⁸": {
         "prefix": [
-            "sup8",
+            "sup8","\\sup8",
             "^8"
         ],
         "body": [
@@ -649,7 +649,7 @@
     },
     "superscript 9 - ⁹": {
         "prefix": [
-            "sup9",
+            "sup9","\\sup9",
             "^9"
         ],
         "body": [
@@ -659,7 +659,7 @@
     },
     "superscript a - ᵃ": {
         "prefix": [
-            "supa",
+            "supa","\\supa",
             "^a"
         ],
         "body": [
@@ -669,7 +669,7 @@
     },
     "superscript b - ᵇ": {
         "prefix": [
-            "supb",
+            "supb","\\supb",
             "^b"
         ],
         "body": [
@@ -679,7 +679,7 @@
     },
     "superscript c - ᶜ": {
         "prefix": [
-            "supc",
+            "supc","\\supc",
             "^c"
         ],
         "body": [
@@ -689,7 +689,7 @@
     },
     "superscript d - ᵈ": {
         "prefix": [
-            "supd",
+            "supd","\\supd",
             "^d"
         ],
         "body": [
@@ -699,7 +699,7 @@
     },
     "superscript e - ᵉ": {
         "prefix": [
-            "supe",
+            "supe","\\supe",
             "^e"
         ],
         "body": [
@@ -709,7 +709,7 @@
     },
     "superscript f - ᶠ": {
         "prefix": [
-            "supf",
+            "supf","\\supf",
             "^f"
         ],
         "body": [
@@ -719,7 +719,7 @@
     },
     "superscript g - ᵍ": {
         "prefix": [
-            "supg",
+            "supg","\\supg",
             "^g"
         ],
         "body": [
@@ -729,7 +729,7 @@
     },
     "superscript h - ʰ": {
         "prefix": [
-            "suph",
+            "suph","\\suph",
             "^h"
         ],
         "body": [
@@ -739,7 +739,7 @@
     },
     "superscript i - ⁱ": {
         "prefix": [
-            "supi",
+            "supi","\\supi",
             "^i"
         ],
         "body": [
@@ -749,7 +749,7 @@
     },
     "superscript j - ʲ": {
         "prefix": [
-            "supj",
+            "supj","\\supj",
             "^j"
         ],
         "body": [
@@ -759,7 +759,7 @@
     },
     "superscript k - ᵏ": {
         "prefix": [
-            "supk",
+            "supk","\\supk",
             "^k"
         ],
         "body": [
@@ -769,7 +769,7 @@
     },
     "superscript l - ˡ": {
         "prefix": [
-            "supl",
+            "supl","\\supl",
             "^l"
         ],
         "body": [
@@ -779,7 +779,7 @@
     },
     "superscript m - ᵐ": {
         "prefix": [
-            "supm",
+            "supm","\\supm",
             "^m"
         ],
         "body": [
@@ -789,7 +789,7 @@
     },
     "superscript n - ⁿ": {
         "prefix": [
-            "supn",
+            "supn","\\supn",
             "^n"
         ],
         "body": [
@@ -799,7 +799,7 @@
     },
     "superscript o - ᵒ": {
         "prefix": [
-            "supo",
+            "supo","\\supo",
             "^o"
         ],
         "body": [
@@ -809,7 +809,7 @@
     },
     "superscript p - ᵖ": {
         "prefix": [
-            "supp",
+            "supp","\\supp",
             "^p"
         ],
         "body": [
@@ -819,7 +819,7 @@
     },
     "superscript r - ʳ": {
         "prefix": [
-            "supr",
+            "supr","\\supr",
             "^r"
         ],
         "body": [
@@ -829,7 +829,7 @@
     },
     "superscript s - ˢ": {
         "prefix": [
-            "sups",
+            "sups","\\sups",
             "^s"
         ],
         "body": [
@@ -839,7 +839,7 @@
     },
     "superscript t - ᵗ": {
         "prefix": [
-            "supt",
+            "supt","\\supt",
             "^t"
         ],
         "body": [
@@ -849,7 +849,7 @@
     },
     "superscript u - ᵘ": {
         "prefix": [
-            "supu",
+            "supu","\\supu",
             "^u"
         ],
         "body": [
@@ -859,7 +859,7 @@
     },
     "superscript v - ᵛ": {
         "prefix": [
-            "supv",
+            "supv","\\supv",
             "^v"
         ],
         "body": [
@@ -869,7 +869,7 @@
     },
     "superscript w - ʷ": {
         "prefix": [
-            "supw",
+            "supw","\\supw",
             "^w"
         ],
         "body": [
@@ -879,7 +879,7 @@
     },
     "superscript x - ˣ": {
         "prefix": [
-            "supx",
+            "supx","\\supx",
             "^x"
         ],
         "body": [
@@ -889,7 +889,7 @@
     },
     "superscript y - ʸ": {
         "prefix": [
-            "supy",
+            "supy","\\supy",
             "^y"
         ],
         "body": [
@@ -899,7 +899,7 @@
     },
     "superscript z - ᶻ": {
         "prefix": [
-            "supz",
+            "supz","\\supz",
             "^z"
         ],
         "body": [
@@ -909,7 +909,7 @@
     },
     "superscript A - ᴬ": {
         "prefix": [
-            "supA",
+            "supA","\\supA",
             "^A"
         ],
         "body": [
@@ -919,7 +919,7 @@
     },
     "superscript B - ᴮ": {
         "prefix": [
-            "supB",
+            "supB","\\supB",
             "^B"
         ],
         "body": [
@@ -929,7 +929,7 @@
     },
     "superscript D - ᴰ": {
         "prefix": [
-            "supD",
+            "supD","\\supD",
             "^D"
         ],
         "body": [
@@ -939,7 +939,7 @@
     },
     "superscript E - ᴱ": {
         "prefix": [
-            "supE",
+            "supE","\\supE",
             "^E"
         ],
         "body": [
@@ -949,7 +949,7 @@
     },
     "superscript G - ᴳ": {
         "prefix": [
-            "supG",
+            "supG","\\supG",
             "^G"
         ],
         "body": [
@@ -959,7 +959,7 @@
     },
     "superscript H - ᴴ": {
         "prefix": [
-            "supH",
+            "supH","\\supH",
             "^H"
         ],
         "body": [
@@ -969,7 +969,7 @@
     },
     "superscript I - ᴵ": {
         "prefix": [
-            "supI",
+            "supI","\\supI",
             "^I"
         ],
         "body": [
@@ -979,7 +979,7 @@
     },
     "superscript J - ᴶ": {
         "prefix": [
-            "supJ",
+            "supJ","\\supJ",
             "^J"
         ],
         "body": [
@@ -989,7 +989,7 @@
     },
     "superscript K - ᴷ": {
         "prefix": [
-            "supK",
+            "supK","\\supK",
             "^K"
         ],
         "body": [
@@ -999,7 +999,7 @@
     },
     "superscript L - ᴸ": {
         "prefix": [
-            "supL",
+            "supL","\\supL",
             "^L"
         ],
         "body": [
@@ -1009,7 +1009,7 @@
     },
     "superscript M - ᴹ": {
         "prefix": [
-            "supM",
+            "supM","\\supM",
             "^M"
         ],
         "body": [
@@ -1019,7 +1019,7 @@
     },
     "superscript N - ᴺ": {
         "prefix": [
-            "supN",
+            "supN","\\supN",
             "^N"
         ],
         "body": [
@@ -1029,7 +1029,7 @@
     },
     "superscript O - ᴼ": {
         "prefix": [
-            "supO",
+            "supO","\\supO",
             "^O"
         ],
         "body": [
@@ -1039,7 +1039,7 @@
     },
     "superscript P - ᴾ": {
         "prefix": [
-            "supP",
+            "supP","\\supP",
             "^P"
         ],
         "body": [
@@ -1049,7 +1049,7 @@
     },
     "superscript R - ᴿ": {
         "prefix": [
-            "supR",
+            "supR","\\supR",
             "^R"
         ],
         "body": [
@@ -1059,7 +1059,7 @@
     },
     "superscript T - ᵀ": {
         "prefix": [
-            "supT",
+            "supT","\\supT",
             "^T"
         ],
         "body": [
@@ -1069,7 +1069,7 @@
     },
     "superscript U - ᵁ": {
         "prefix": [
-            "supU",
+            "supU","\\supU",
             "^U"
         ],
         "body": [
@@ -1079,7 +1079,7 @@
     },
     "superscript V - ⱽ": {
         "prefix": [
-            "supV",
+            "supV","\\supV",
             "^V"
         ],
         "body": [
@@ -1089,7 +1089,7 @@
     },
     "superscript W - ᵂ": {
         "prefix": [
-            "supW",
+            "supW","\\supW",
             "^W"
         ],
         "body": [
@@ -1099,7 +1099,7 @@
     },
     "Q.E.D - ■": {
         "prefix": [
-            "QED"
+            "QED","\\QED"
         ],
         "body": [
             "∎"
