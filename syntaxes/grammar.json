@@ -29,8 +29,7 @@
                 { "include": "#keyword.operator.math.slspec" },
                 { "include": "#punctuation.definition.slspec" },
                 { "include": "#comment.block.slspec" },
-                { "include": "#comment.line.slspec" },
-                { "include": "#keyword.control.tad.slspec" }
+                { "include": "#comment.line.slspec" }
             ]
         },
         "keyword.control.slspec": {
@@ -144,10 +143,6 @@
                 "0": { "name": "punctuation.comment.close" }
             },
             "name": "comment.line.slspec"
-        },
-        "keyword.control.tad.slspec": {
-            "match": "(?i)\\b(tad|fin tad|igualdad|generos|exporta|usa|observadores|generadores|otras operaciones|axiomas)\\b",
-            "name": "keyword.control.slspec"
         }
     }
 }

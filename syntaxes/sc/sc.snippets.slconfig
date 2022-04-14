@@ -27,7 +27,6 @@ no es subconjunto igual - ⊈ ; nsubconjunto igual ; ⊈
 pertenece - ∈ ; pertenece ; ∈
 no pertenece - ∉ ; npertenece ; ∉ 
 
-conjunto vacio - ∅ ; vacio , conjunto vacio ; ∅
 
 ## --- cuantificadores --- ##
 
@@ -63,7 +62,7 @@ desigual - ≠ ; neq ; ≠
 menor o igual - ≤ ; leq ; ≤  
 mayor o igual - ≥ ; geq ; ≥ 
 producto cruz - ⨉ ; cruz ; ⨉ 
-por - × ; por ; ×
+
 
 ## --- super / subscript --- ##
 
@@ -177,17 +176,6 @@ Q.E.D - ■ ; QED ; ∎
 angle bracket - ⟨ ; anglel ; ⟨ 
 angle bracket - ⟩ ; angler ; ⟩
 strikethrough - ̸  ; strikethrough ;  ̸   
-bullet - ○ ; bullet ; ○
-puntito - • ; puntito ; •
-flecha derecha - ⟶ ; flecha , flecha derecha ; ➝
-flecha izquierda - ⟵ ; flecha izquierda ; ⟵
-
-## --- letras --- ##
-alpha - α ; alpha ; α
-beta - β ; beta ; β
-gamma - γ ; gamma ; γ
-delta - δ ; delta ; δ
-epsilon - ε ; epsilon ; ε
 
 ## --- compleción sintáctica --- ###
 

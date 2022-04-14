@@ -1,10 +1,4 @@
 # === Change Log === #
-## [0.0.6] - 2022-04-14 fixes y TADs
-### added ###
-- agregado de gramáticas y snippets para TADs @earosselot
-- corrección de diversas gramáticas @NatanVek
-
-
 ## [0.0.5] - 2021-09-18 fixes y nuevas adiciones
 ### added ###
 - grammar para Mat[]
