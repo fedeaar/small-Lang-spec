@@ -3,8 +3,9 @@
 ## Features 
 
 - gramática para SmallLang (como aparece en David Gries: Science of Programming - 1981) y la notación para especificación de Algoritmos y Estructuras de Datos I (UBA).
+- gramática para lógica de primer orden y la axiomatización de TADs de Algoritmos y Estructuras de Datos II (UBA).
 - dos temas opcionales que extienden a dark_plus de vscode para funcionar mejor con smallLang (no lo alteran).
-- compatibilidad con otros temas que sigan las convenciones de macromates.
+- compatibilidad con otros temas que siguen las convenciones de macromates.
 - snippets varios, entre ellos para los axiomas de corrección de programas, estructuración de proc, pred, aux, enum, type, if y while.
 - un monton de reemplazos sintácticos (ver a través del commando > SmallLang-Spec: edit snippets).
 
@@ -32,22 +33,11 @@ una vez instalado:
 - Fede Arienti: @fedeaar (fa.arienti@gmail.com) 
 - Natán Vekselman: @NatanVek 
 - Joni Bekenstein: @honi
+- Eduardo Rosselot: @earosselot
 
 ## Release Notes 
 
-## [0.0.5] - 2021-09-18 fixes y nuevas adiciones
+## [0.0.6] - 2022-04-14 fixes y TADs
 ### added ###
-- grammar para Mat[]
-- grammar para length, head, tail, addFirst, concat, ++, subSeq, setAt, apariciones
-- grammar para div, mod
-- grammar para log, sin, cos, tan, asin, acos, atan
-- grammar para ord
-- ̸strikethrough  snippet
-- snippets para sumatoria y productoria (estructura)
-- grammar para endif
-- grammar para ⟹?
-- snippet teorema del invariante
-
-### fixed ###
-- color diferente para funciones de especificación en el theme
-- reescritura de axiomas 1 a 5
+- agregado de gramáticas y snippets para TADs @earosselot
+- corrección de diversas gramáticas @NatanVek
