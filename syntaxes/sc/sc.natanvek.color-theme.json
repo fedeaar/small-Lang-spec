@@ -17,9 +17,9 @@
 			}
 		},
 		{
-			"name": "if  / fi / endif / while / endwhile / skip / :=",
+			"name": "if  / fi / endif / while / endwhile / skip / := /",
 			"scope": [
-				"keyword.function.slspec"
+				"keyword.function.slspec", "keyword.function.inner.slspec"
 			],
 			"settings":{
 				"fontStyle": "italic",
@@ -33,17 +33,7 @@
 			],
 			"settings":{
 				"fontStyle": "italic bold",
-				"foreground": "#ffa13d"
-			}
-		},
-		{
-			"name": "then  / else / do",
-			"scope": [
-				"keyword.function.inner.slspec"
-			],
-			"settings":{
-				"fontStyle": "",
-				"foreground": "#82d8ee"
+				"foreground": "#ebae5a"
 			}
 		},
 		{
@@ -53,7 +43,7 @@
 			],
 			"settings":{
 				"fontStyle": "",
-				"foreground": "#82d8ee"
+				"foreground": "#c586c0"
 			}
 		},
 		{
@@ -63,7 +53,7 @@
 			],
 			"settings": {
 				"fontStyle": "",
-				"foreground": "#4ec9b0"
+				"foreground": "#c586c0"
 			}
 		},
 		{
@@ -73,7 +63,7 @@
 			],
 			"settings": {
 				"fontStyle": "",
-				"foreground": "#ffa13d"
+				"foreground": "#4ec9b0"
 			}
 		},
 		{
@@ -93,7 +83,7 @@
 			],
 			"settings": {
 				"fontStyle": "",
-				"foreground": "#4ec9b0"
+				"foreground": "#358cd6"
 			}
 		},
 		{
