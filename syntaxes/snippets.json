@@ -1,4 +1,13 @@
 {
+    "infinito": {
+        "prefix": [
+            "inf","\\inf"
+        ],
+        "body": [
+            "∞"
+        ],
+        "description": ""
+    },
     "conjunto enteros - ℤ": {
         "prefix": [
             "integer","\\integer"
